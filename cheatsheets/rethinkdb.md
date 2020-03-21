@@ -1,4 +1,5 @@
 # RethinkDB
+<https://rethinkdb.com/docs>
 
 * ReQL is case sensitive.
 * rethink import --help
