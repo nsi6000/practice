@@ -16,3 +16,5 @@ data:
 - https://kafka-tutorials.confluent.io/
 - https://university.mongodb.com/
 - https://academy.datastax.com/
+- https://airflow.apache.org/docs/stable/
+- https://docs.prefect.io/core/
