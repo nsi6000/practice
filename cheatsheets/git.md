@@ -18,3 +18,30 @@
 * git diff HEAD
 
 
+# Concepts
+
+* commit
+* branch
+* pull and push
+* rebase
+* reset
+* revert
+* merge
+* HEAD
+* origin
+* master
+* remote
+
+# Best Practices
+
+* Commit early, commit often.
+* Atomic commits. (same fix/feature, same file.)
+* Complete and tested commits.
+* Meaningful commit messages.
+	* max 50 characters.
+	* imperative present tense.
+* Never rebase.
+* Release tags should be immutable and distinct from the marketing release.
+	* Release tag: "2.0.0" and Marketing tag "Fizz Buzz".
+	* It allows to have immutable tags and avoids take-backs.
+
