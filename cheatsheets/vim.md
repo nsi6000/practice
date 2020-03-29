@@ -15,6 +15,7 @@
 	* N //search-previous
 * :%s/foo/bar/g //search-replace-global
 * :!<command> //execute-shell-command
+* :recover .orientdb.md.swp //recover a vim swap file.
 
 * I //insert-BOL
 * i //insert-mode
