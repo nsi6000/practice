@@ -16,5 +16,12 @@
 
 
 # Commands
+* show dbs
 * show collections
 * use <db_name>
+* db.moviesScratch.insertOne({title:"Star Wars", year: 1982, imdb:"tt0084726"}) //implicitly creates the Collection.
+* db.moviesScratch.find().pretty()
+* db.moviesScratch.insertMany([{title:"Star Wars I", year: 1982}, {title:"Star Wars II", year: 1987}]) //inserts Documents as Array.
+* db.moviesScratch.find({"year":1987})
+* db.movieDetails.find({"awards.wins":2, "awards.nominations":2}).count()
+
