@@ -67,6 +67,20 @@
 * cassandra
 * puckel/docker-airflow
 * prefecthq/prefect
+* altibase/altibase
+* couchbase
+* postgres
+* redis
+* mysql
+* mariadb
+* crate
+* percona
+* neo4j
+* rethinkdb
+* arangodb
+* orientdb
+* monetdb/monetdb
+
 
 ## Programming languages
 * python
