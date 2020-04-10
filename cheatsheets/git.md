@@ -27,10 +27,13 @@
 * reset
 * revert
 * merge
-* HEAD
+* HEAD: last commit on the history.
 * origin
-* master
+* master: current official version of the code.
 * remote
+* pull request (PR): request to merge the commit into master branch.
+* diff: set of changed lines within a single file.
+
 
 # Best Practices
 
