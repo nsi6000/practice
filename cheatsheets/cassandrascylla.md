@@ -106,6 +106,29 @@
 *	=> ALL NODES MUST HAVE THE SAME SNITCHES! Otherwise you'll have an inconsistent state.
 * Partition Summary: stores byte offsets into the partition index.
 * Key Cache: stores the byte offset of the most recently accessed records.
+* Hinted Handoff: replay of missing data if a machine is down when it goes back up. Default time: 3 hours.
+ * Careful with CL=ANY, reply success while Nodes don't have (yet) the data. (hinted handoff)
+ * Even more dangerous, if the Hint window expires before the Node come back to life, the Coordinator will delete your write.
+* Consistency Level:
+	- consistency per query.
+	- ALL, QUORUM (50%+, for RF=3, it's 2.) | LOCAL_QUORUM (use only local DC to minimize latency), ONE | LOCAL_ONE.
+	- How many replicas do I need to hear that R/W before that R/W is considered successful.
+* The Write Path: writes -> any node (coordinator) -> commit log (append-only, immutable, stored sequentially, on HDD.) -> memtable (stored by partition key, on RAM.) -flushed to disk + delete the commit log (not needed anymore)-> sstable (immutable file on disk, sorted by partition key).
+  * Every write gets a timestamp.
+* Tombstone: delete is a special type of write.
+* sstable compaction: merging of sstables and keep only last timestamp.
+* The Read Path: query any server -> contact node with the requested key -> on each node, data is pulled from sstable and merged.
+  * IF CL = ALL, perform a read_repair.
+  * If CL < ALL, perform read_repair_chance in the background.
+* Read Repair: compare all Nodes data/checksum. If they don't match, send back the latest data on each node based on latest timestamp.
+* RF = Replication Factor = RF is set per keyspace.
+* (Master-Slave) Replication: data is replicated asyncroniously. -> Replication lag.
+* Sharding. (no joins, no aggregations.)
+* Master failover.
+* Hash Ring:
+	- no MSR. No Replica Sets.
+	- no ZooKeeper.
+	- RF=N servers.
 
 ## ScyllaDB specifics
 * Scylla has a ring type architecture
