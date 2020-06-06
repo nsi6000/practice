@@ -1,5 +1,7 @@
 # MongoDB
-* https://docs.mongodb.com/manual/
+## Websites
+* <https://docs.mongodb.com/manual/>
+* <https://github.com/ramnes/awesome-mongodb>
 * MongoDB Atlas - DBaaS which handles Replication
 * MongoDB Compass - MongoDB GUI Client
 * mongo shell
