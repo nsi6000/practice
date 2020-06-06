@@ -1,6 +1,11 @@
 # Git
-<https://git-scm.com/doc>
+## Websites
+* <https://git-scm.com/doc>
+* <https://lab.github.com/>
+* <https://github.com/dictcp/awesome-git>
+* <https://github.com/sdras/awesome-actions>
 
+## Commands
 * git init
 * git clone <repository_url>
 * git config -e --global //edit the config gile for "global".
