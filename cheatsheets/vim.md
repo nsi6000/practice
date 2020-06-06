@@ -1,7 +1,10 @@
 # Vim
-<https://vimawesome.com/>
-<https://vim.fandom.com/>
+## Websites
+* <https://vimawesome.com/>
+* <https://vim.fandom.com/>
+* <https://github.com/mhinz/vim-galore>
 
+## Commands
 * :wq //write-quit
 * :q! //discard-quit
 * :w //write-save
