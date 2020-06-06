@@ -35,6 +35,8 @@
 * COPY <from_path> <to_path>
 * RUN <command>
 * EXPOSE <port_number>
+* [Dockerfile Best Practices](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
+* [Builder Pattern / Multi-stage builds](https://docs.docker.com/develop/develop-images/multistage-build/)
 
 
 # Docker images
@@ -65,6 +67,7 @@
 ## Databases
 * mongo
 * cassandra
+* scylladb/scylla
 * puckel/docker-airflow
 * prefecthq/prefect
 * altibase/altibase
@@ -80,6 +83,13 @@
 * arangodb
 * orientdb
 * monetdb/monetdb
+* dgraph/dgraph
+* cockroachdb/cockroach
+* voltdb/voltdb-community
+* apache/incubator-druid
+* alluxio/alluxio-presto-sandbox //https://www.alluxio.io/blog/getting-started-with-the-alluxio-presto-sandbox/
+* docker run -d -p 14022:22 -p 9000:9000 -p 14240:14240 --name tigergraph_dev --ulimit nofile=1000000:1000000 -v ~/data:/home/tigergraph/mydata -t docker.tigergraph.com/tigergraph-dev:latest //https://github.com/tigergraph/ecosys/tree/master/demos/guru_scripts/docker
+
 
 
 ## Programming languages
