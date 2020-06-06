@@ -1,6 +1,10 @@
 # Airflow
-<https://airflow.apache.org/docs/stable/>
+## Websites
+* <https://airflow.apache.org/docs/stable/>
+* <https://github.com/jghoman/awesome-apache-airflow>
+* <https://marclamberti.com/>
 
+## Commands
 * airflow list_dags
 * airflow list_tasks <dag_name>
 
