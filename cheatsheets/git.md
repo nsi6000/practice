@@ -22,6 +22,7 @@
 * git cherry-pick (-e) (-x)
 * git diff HEAD
 * git diff <commit> <commit> #git diff 0a52659 6aefce1 
+* git diff origin/master -- vim.md #diff of local file vim.md with master.
 
 # Concepts
 
