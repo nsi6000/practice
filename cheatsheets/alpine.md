@@ -37,6 +37,7 @@
 * git
 * wget|curl
 * gcc //compile linux kernel.
+* libc-dev //required to compile with GCC.
 * binutils //compile linux kernel.
 * gdb
 * radare2
