@@ -21,7 +21,7 @@
 * git checkout <commit_hash>|HEAD|<branch_name>
 * git cherry-pick (-e) (-x)
 * git diff HEAD
-
+* git diff <commit> <commit> #git diff 0a52659 6aefce1 
 
 # Concepts
 
