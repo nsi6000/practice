@@ -69,6 +69,7 @@
 
 ## Databases
 * mongo
+* mongo-express
 * cassandra
 * scylladb/scylla
 * puckel/docker-airflow
@@ -92,6 +93,29 @@
 * apache/incubator-druid
 * alluxio/alluxio-presto-sandbox //https://www.alluxio.io/blog/getting-started-with-the-alluxio-presto-sandbox/
 * docker run -d -p 14022:22 -p 9000:9000 -p 14240:14240 --name tigergraph_dev --ulimit nofile=1000000:1000000 -v ~/data:/home/tigergraph/mydata -t docker.tigergraph.com/tigergraph-dev:latest //https://github.com/tigergraph/ecosys/tree/master/demos/guru_scripts/docker
+* gluster/gluster-centos
+* minio/minio
+* minio/mc
+* ceph/ceph
+* alluxio/alluxio
+* openio/sds
+* couchdb
+* adminer
+* influxdb
+* solr
+* docker run -e 'ACCEPT_EULA=Y' 'SA_PASSWORD=YourStrongPassword123' -p 1433:1433 -d mcr.microsoft.com/mssql/server:2017-latest
+* docker run -d -p 49161:49161 wnameless/oracle-xe-11g-r2
+
+
+
+
+
+##Data processing
+* nodered/node-red
+* bitnami/spark
+* streamsets/datacollector
+* sebp/elk
+
 
 
 
@@ -114,6 +138,8 @@
 * r-base
 * nimlang/nim
 * crystallang/crystal
+* chapel/chapel
+
 
 
 
