@@ -55,3 +55,22 @@
 	* Release tag: "2.0.0" and Marketing tag "Fizz Buzz".
 	* It allows to have immutable tags and avoids take-backs.
 
+# Git Flow
+0. git clone / git pull
+1. git branch <branch_name>
+2. git checkout <branch_name>
+3. git branch
+4. <code>
+5. <lint> (checkpatch.pl)
+6. git status
+7. git diff
+8. make M=<path>
+9. git commit -a
+10. short description - long description - signedoffby - ackedby - diff.
+11. git log
+12. git show --pretty=full
+13. git format-patch master..<branch_name>
+14. get_maintainer.pl <patch_name>.patch
+15. git send-email --to <email> --cc <email> <patch>.patch
+16. git blame <file>
+
