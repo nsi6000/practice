@@ -1,4 +1,0 @@
-A list of all the pro/g/ramming challenges.
-	00 - Hello World.
-	01 - FizzBuzz.
-

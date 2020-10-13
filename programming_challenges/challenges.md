@@ -1,0 +1,37 @@
+#Pro/g/ramming challenges
+1. Hello World.
+2. FizzBuzz.
+3. atoi (K&R 43)
+4. lower (K&R 43)
+5. pseudo-RNG (K&R 46)
+6. htoi (K&R 46)
+7. squeeze (K&R 47)
+8. strcat (K&R 48)
+9. getbits (K&R 49)
+10. bitcount (K&R 50)
+11. binsearch (K&R 58)
+12. shellsort (K&R 62)
+13. reverse (K&R 76)
+14. itoa (K&R 64)
+15. itob (K&R 64)
+16. trim (K&R 65)
+17. atof (K&R 71)
+18. rev_polish_cal (K&R 76)
+19. qsort (K&R 87)
+20. swap (K&R 96)
+21. alloc_afree (K&R 101)
+22. strcpy (K&R 105)
+23. strcmp (K&R 106)
+24. makepoint (K&R 130)
+25. addpoint (K&R 130)
+26. ptinrect (K&R 130)
+27. canonrect (K&R 131)
+28. count_keywords (K&R 134)
+29. getword (K&R 136)
+30. lookup_install (K&R 145)
+31. cat (K&R 162)
+32. Fibonacci. (TDD, recursive, iterative.)
+33. Factorial. (TDD, recursive, iterative.)
+34. Caesar cipher.
+35. XOR process.
+
