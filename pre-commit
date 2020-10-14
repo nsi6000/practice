@@ -1,0 +1,14 @@
+#file to be copied into .git/hooks folder.
+
+#!/bin/bash
+
+echo -e "Thank you for your commit!"
+
+#python_files=$(git diff --cached --name-only | grep -E '.*.\(py)$')
+c_files=$(git diff --cached --name-only | grep -E '.*.\(c|cc|cpp)$')
+
+#echo -e $python_files
+#flake8 $python_files
+indent -linux $c_files
+
+
