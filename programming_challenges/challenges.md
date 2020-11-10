@@ -60,6 +60,7 @@ Iterative and Recursive.
 * Fibonacci. (TDD, recursive, iterative.)
 * Factorial. (TDD, recursive, iterative.)
 * GCD. (TDD, recursive, iterative.)
+* HPF.
 * Caesar cipher.
 * XOR process.
 ## Geometry
