@@ -1,15 +1,15 @@
-#Programming challenges
-##4 Paradigms
+# Pro/g/ramming challenges
+## 4 Paradigms
 1. [CS] Complete Search (aka Brute Force)
 2. [DC] Divide and Conquer
 3. [G] Greedy
 4. [DP] Dynamic Programming
 Iterative and Recursive.
-##3 Steps
+## 3 Steps
 1. Strategical: Better algorithms and data structures.
 2. Tactical: Solution Optimization. (dummy values for Greedy for Station Balance.)
 3. Operational: Technical Optimization.
-##Strings
+## Strings
 * Hello World.
 * FizzBuzz.
 * atoi (K&R 43)
@@ -35,17 +35,17 @@ Iterative and Recursive.
 * lookup_install (K&R 145)
 * cat (K&R 162)
 * is_string_balanced
-##Sorts
+## Sorts
 * shellsort (K&R 62)
 * quicksort (K&R 87) [DC]
 * mergesort [DC]
 * bubblesort
 * insertionsort
 * heapsort [DC]
-##Searchs
+## Searchs
 * linear_search
 * binary_search (K&R 58) [DC]
-##Trees
+## Trees
 * BST
 * is_valid_BST/checkBST
 * Trie
@@ -56,22 +56,22 @@ Iterative and Recursive.
 * connected_cells (HR)
 * Kruskal MST [G]
 * Dijkstra SSSP [G]
-##Numbers
+## Numbers
 * Fibonacci. (TDD, recursive, iterative.)
 * Factorial. (TDD, recursive, iterative.)
 * GCD. (TDD, recursive, iterative.)
 * Caesar cipher.
 * XOR process.
-##Geometry
+## Geometry
 * makepoint (K&R 130)
 * addpoint (K&R 130)
 * ptinrect (K&R 130)
 * canonrect (K&R 131)
-#Finance
+## Finance
 * bond_price
 * share_price
 * BSM
-##Misc
+## Misc
 * 8 Queens [CS]
 * Rat Attack [CS]
 * abcde/ghijk [CS]
