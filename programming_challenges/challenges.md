@@ -1,4 +1,4 @@
-#Pro/g/ramming challenges
+#Programming challenges
 ##4 Paradigms
 1. [CS] Complete Search (aka Brute Force)
 2. [DC] Divide and Conquer
