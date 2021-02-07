@@ -43,6 +43,7 @@ Iterative and Recursive.
 * \[OELL\] odd-even linked list.
 * \[RLLE\] remove linked list elements.
 * \[SLL\] shift linked list.
+* \[CLL\] is cycling linked list.
 ## Sorts
 * shellsort (K&R 62)
 * quicksort (K&R 87) [DC]
@@ -68,18 +69,20 @@ Iterative and Recursive.
 * \[IBT\] invert binary tree.
 * \[RST\] right sibling tree.
 * \[RSV\] binary tree right side view.
-* \[BTP\] binary tree path.
+* \[BTP\] binary tree paths.
 * \[BTT\] binary tree tilt.
 * \[MTBT\] merge two binary trees.
 * \[MDBT\] maximum depth of binary tree.
 * \[FBT\] flatten binary tree.
+* \[MPS\] binary tree minimum path sum.
 ## Numbers
 * \[FIB\] Fibonacci. (TDD, recursive, iterative.)
-* Factorial. (TDD, recursive, iterative.)
+* \[FAC\] Factorial. (TDD, recursive, iterative.)
 * \[GCD\] GCD. (TDD, recursive, iterative.)
 * \[HPF\] abc.
 * Caesar cipher.
-* XOR process.
+* \[ROT13\] ROT13.
+* \[XOR\] XOR process.
 ## Geometry
 * makepoint (K&R 130)
 * addpoint (K&R 130)
@@ -106,7 +109,9 @@ Iterative and Recursive.
 * minesweeper. (assign numbers + solve it)
 * \[LCA\] lowest_common_ancestor.
 * \[LDS\] longest divisible subset.
+* \[LIS\] longest increasing subsequence.
 * \[LCS\] longest common subsequence.
+* \[LBS\] longest bitonic subsequence.
 * \[YCA\] youngest common ancestor.
 * \[LPS\] longest palindromic substring.
 * \[LCP\] longest common prefix.
@@ -124,7 +129,7 @@ Iterative and Recursive.
 * \[MPS\] minimum path sum.
 * \[FUN\] first unique number.
 * \[FUC\] first unique character in string.
-* \[SIP\] ¨search insert position.
+* \[SIP\] search insert position.
 * \[MCM\] matrix chain multiplication.
 * \[MDS\] matrix diagonal sum.
 * \[FMP\] first missing positive.
@@ -134,10 +139,12 @@ Iterative and Recursive.
 * \[MAD\] minimum absolute difference in an array.
 * \[ATN\] add two numbers.
 * \[UNO\] unique number of occurence.
-* \[LCS\] longest string chain.
+* \[LSC\] longest string chain.
 * \[2SUM\] 2SUM.
 * \[3SUM\] 3SUM.
 * \[4SUM\] 4SUM.
+* \[01K\] 0 1 Knapsack Problem.
+* \[RPN\] Reverse Polish Notation.
 * course schedule.
 * reverse words in a string.
 * pascal triangle.
@@ -150,9 +157,11 @@ Iterative and Recursive.
 * Number of Islands.
 * valid parenthesis.
 * valid palindrome.
+* valid anagram.
 * Edit distance.
 * Hamming distance.
 * Levenstein distance.
 * Monotonic array.
 * Frog Jump.
 * Reverse integer.
+* maximum product subarray.
