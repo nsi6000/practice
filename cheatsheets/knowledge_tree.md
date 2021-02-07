@@ -1,6 +1,7 @@
-#Knowledge Tree
+# Knowledge Tree
 ## Data Engineering
 ### Data Architecture
+#### General pipeline (SORs -> Ingestion (ETL, ELT, Stream) -> Storage -> Consumption (viz, ssbi, ml). DQ, MDM, DG.)
 #### Kimball
 #### Inmon
 #### Data Vault
@@ -21,7 +22,7 @@
 #### Airflow
 #### other
 ### Data Storage
-#### Principles (OLAP vs OLTP, Row vs column store, in memory DB,...)
+#### Principles (OLAP vs OLTP, RDBMS vs NoSQL, Row vs column store, in memory DB,...)
 #### SQL Server (Internals, TSQL, DBA)
 #### Oracle DB (Internals, PLSQL, DBA)
 #### Postgresql (Internals, pgSQL, DBA)
@@ -47,14 +48,14 @@
 #### Programming problems (CTCI, leetcode,...)
 #### System Design
 ## Soft Skills
-### General ITW questions
-### Data Management, Data Governance, GDPR
-### Scrum
-### MC, Case ITW
-### IB, Fin Mod
-### Powerpoint (shortcuts, icons,...)
-### Excel (shortcuts, linear regression,...)
-### Banking industry
-### Insurance industry
-### BA, FA
-### DS, AI, ML
+#### General ITW questions
+#### Data Management, Data Governance, GDPR
+#### Scrum
+#### MC, Case ITW
+#### IB, Fin Mod
+#### Powerpoint (shortcuts, icons,...)
+#### Excel (shortcuts, linear regression,...)
+#### Banking industry
+#### Insurance industry
+#### BA, FA
+#### DS, AI, ML
