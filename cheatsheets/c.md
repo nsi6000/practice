@@ -1,4 +1,4 @@
-#K&R ISO C Book Notes:
+# K&R ISO C Book Notes:
 => gcc -ansi -pedantic -Wall -Werror -Wextra
 - variable types:
 	external/global. (init = zero.)
@@ -25,12 +25,14 @@
 	note: careful of side effects, multiple evaluations and order of operations.
 	#undef getchar //to ensure a routine is a function and not a macro.
 - conditional inclusion:
+```
 	#if
 	#elif //else if.
 	#else
 	#endif //end of if.
 	#ifdef //if defined.
 	#ifndef //if not defined.
+```
 - main
 - printf / scanf
 - variable. (all lowercase.)
@@ -40,6 +42,7 @@
 	type coercion. => "cast(ing)". implicit casting via function calls.
 - arithmetic expression
 - loop.
+```
 	while (expression)
 		statement
 	
@@ -60,7 +63,7 @@
 	goto error;
 	error:
 		statement
-
+```
 - symbolic constant. (all uppercase.)
 - cc main.c getline.c strindex.c
 - cc main.c getline.o strindex.o
@@ -69,6 +72,7 @@
 - increment/drecement. (++i/--i)
 - null statement.(;)
 - condition.
+```
 	if (expression)
 		statement
 	else if (expression)
@@ -82,8 +86,10 @@
 		<...>
 		default: statements (break;)
 	}
+```
 - boolean expression. (A == B, A != B, A || B,...)
 - functions.
+```
 	return-type function-name (argument declarations)
 	{
 		declarations;
@@ -93,16 +99,17 @@
 	
 	tip: use <void> in function without arguments. (p.72)
 	note: functions are global by default. Use static if needed.
+```
 - arrays and character arrays.
 - operators vs statements vs expressions.
-	arithmetic operators (+-*/%)
-	logical operators (< <= > >= == != && ||)
-	=> operators precedence and associativity. (see Table 2-1, page 53.)
-	unary negation operator.
-	cast operator.
-	increment and decrement operator. (difference between ++i and i++.)
-	bitwise operators (6: & | ^ << >> ~)
-	assignment operators (10: expr1 op = expr2 | for arithmetic and bitwise operators.)
+	- arithmetic operators (+-*/%)
+	- logical operators (< <= > >= == != && ||)
+	- operators precedence and associativity. (see Table 2-1, page 53.)
+	- unary negation operator.
+	- cast operator.
+	- increment and decrement operator. (difference between ++i and i++.)
+	- bitwise operators (6: & | ^ << >> ~)
+	- assignment operators (10: expr1 op = expr2 | for arithmetic and bitwise operators.)
 - reserved keywords. (all lowercase.)
 - decimal (31) vs octal (037) vs hexadecimal (0x1f).
 - ASCII character set and escape sequences (\n \r \t \\ ...).
@@ -110,6 +117,7 @@
 - enumeration constant. (enum boolean {NO, YES};)
 - const qualifier. (const char[];)
 - pointer := variable that contains the address of a variable.
+```
 	& applies only to variables and array elements.
 	* unary indirection/deferencing operator.
 	p = &c; //assigns address of c to p.
@@ -121,20 +129,22 @@
 	
 	*p++ = val; //push val onto stack.
 	val = *--p; //pop stack into val.
+```
 - array: difference with a pointer: an array is not a variable. (i.e. no a=pa or a++.)
 	the array name *is* the address of the zeroth element.
 - pointer/address arithmetic:
-	p++; //increments to point 1 element beyond actual.
-	p += i; //increments to point i elements beyond actual.
-	0 is *never* a valid address for data. Therefore used to return abnomalies.
-	comparison is valid for pointers of the same array. (with one exception, see p.103.)
-	all the pointer manipulations automatically take into account the size of the object pointed to.
-	valid operations:
-		assignment of pointers of same type;
-		adding/substracting a pointer and an integer;
-		substracting/comparing two pointers of the same array;
-		assigning/comparing to zero.
+	- p++; //increments to point 1 element beyond actual.
+	- p += i; //increments to point i elements beyond actual.
+	- 0 is *never* a valid address for data. Therefore used to return abnomalies.
+	- comparison is valid for pointers of the same array. (with one exception, see p.103.)
+	- all the pointer manipulations automatically take into account the size of the object pointed to.
+	- valid operations:
+		- assignment of pointers of same type;
+		- adding/substracting a pointer and an integer;
+		- substracting/comparing two pointers of the same array;
+		- assigning/comparing to zero.
 - structure: collection of one or more variables under a single name.
+```
 	struct point {
 		int x;
 		int y;
@@ -156,6 +166,7 @@
 		/* ... */
 		"while", 0
 	}; //declares an array of structures.
+```
 - typdefs: creates new data types names (but only based on existing ones).
 	2 reasons:
 		parametrize against protability issues.
@@ -163,3 +174,15 @@
 - union: similar to a struct holding widest value size.
 - bit-field / field. Similar syntax as structs.
 
+## GDB:
+* gdb <object> //gdb hello_world
+	- run
+	- backtrace
+	- break <function> //break main
+	- conditional break: condition <break_number> <argument>==<value> //condition 1 item_to_remove==1
+	- delete <break_number>
+	- where
+	- c(ontinue)
+	- disass <function> //disass main
+	- help | help <command>
+	- quit
