@@ -47,7 +47,8 @@
 ----------
 * fdisk
 * mount / umount
-
+* PS1="\W\$"
+* cat /etc/shells
 
 
 # Alpine packages
