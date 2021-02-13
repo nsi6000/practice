@@ -11,12 +11,15 @@
 # Bash commands
 
 * <CTRL>+<L> //clear the screen.
-* ls
-* cd
+* ls -la
+* cd .. ~ - / path
 * pwd
-* mv
+* mv -v
+* cp -v
 * rm
-* dd
+* rm -rf
+* dd if=file of=file bs=128k
+* du -h
 * df -h
 * cat
 * echo
@@ -25,7 +28,25 @@
 * uptime
 * tar
 * id
-* uname -a
+* uname -a / id / whoami
+* su
+* mkdir
+* vim
+* ps -aux
+* kill(all) PID
+* grep / sed / awk.
+* ping URL.
+* tar -c(z)vf / -x(z)vf / -t(z)vf file.
+* CTRL+C / CTRL+D / CTRL+S.
+* CTRL+L.
+* shutdown -h/-r now
+* chown 777 file
+* bc
+* !<COMMAND-STRING> //rerun a command.
+* sudo !! //rerun previous command as sudo.
+----------
+* fdisk
+* mount / umount
 
 
 
