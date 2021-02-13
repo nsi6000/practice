@@ -5,10 +5,10 @@
 #### Kimball
 #### Inmon
 #### Data Vault
-#### Anchor Modeling
-#### Normalization
-#### Azure architecture
-#### Databricks architecture
+#### [Anchor Modeling](https://www.researchgate.net/publication/221268907_Anchor_Modeling)
+#### Normalization (3NF Poster)
+#### [Azure Modern Data Warehouse architecture](https://docs.microsoft.com/en-us/azure/architecture/solution-ideas/articles/modern-data-warehouse)
+#### [Databricks Unified Data Platform architecture](https://databricks.com/product/data-lakehouse)
 ### Data Integration
 #### Principles
 #### SSIS, biml
@@ -50,7 +50,7 @@
 ## Soft Skills
 #### General ITW questions
 #### Data Management, Data Governance, GDPR
-#### Scrum
+#### Scrum (US example, Product/Sprint backlog example, Burndown chart example, Jira screenshots, Azure DevOps Boards screenshots.)
 #### MC, Case ITW
 #### IB, Fin Mod
 #### Powerpoint (shortcuts, icons,...)
