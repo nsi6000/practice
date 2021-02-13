@@ -44,6 +44,7 @@ Iterative and Recursive.
 * \[RLLE\] remove linked list elements.
 * \[SLL\] shift linked list.
 * \[CLL\] is cycling linked list.
+* \[NELL\] N-th element of a linked list.
 ## Sorts
 * shellsort (K&R 62)
 * quicksort (K&R 87) [DC]
@@ -82,6 +83,7 @@ Iterative and Recursive.
 * \[HPF\] abc.
 * Caesar cipher.
 * \[ROT13\] ROT13.
+* Vigenere cipher. ([wikipedia link](https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher))
 * \[XOR\] XOR process.
 ## Geometry
 * makepoint (K&R 130)
@@ -92,14 +94,15 @@ Iterative and Recursive.
 * \[BSS\] Buy and Sell Stock.
 * bond_price
 * share_price
-* \[BSM\] BSM
+* \[BSM\] Black-Scholes-Merton Model. ([wikipedia link](https://en.wikipedia.org/wiki/Black%E2%80%93Scholes_model))
 ## Misc
 * \[NQP\] 8 Queens [CS]
 * Rat Attack [CS]
 * abcde/ghijk [CS]
 * \[CCP\] coin_change/make_change [DP][G]
 * ransom_note
-* \[RMQ/RSQ\] abc. (cp1 p.22)
+* \[RMQ\] Range Minimum/Maximum Query. (Segment Tree)(cp1 p.22-25)
+* \[RSQ\] Range Sum Query. (Segment Tree)(cp1 p.22-25)
 * \[ICP\] ice_cream_parlor. [bsearch]
 * staircase. [recursive][memo][DP][iterative]
 * lonely_integer. [bit manipulation]
@@ -154,7 +157,7 @@ Iterative and Recursive.
 * Airport Connections.
 * Appartment Hunting.
 * Calendar Matching.
-* Number of Islands.
+* \[NOI\] Number of Islands.
 * valid parenthesis.
 * valid palindrome.
 * valid anagram.
@@ -165,3 +168,12 @@ Iterative and Recursive.
 * Frog Jump.
 * Reverse integer.
 * maximum product subarray.
+* rotate a matrix. (CTCI)
+* all permutations of s in b. (CTCI)
+* highest_population. (CTCI)
+* \[NRC\] Non-Repeating Character in String.
+* most frequent item in array.
+* common elements of two sorted arrays.
+* is_array_rotation_of_another.
+* one-away strings.
+* rotating 2D array.
