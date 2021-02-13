@@ -1,5 +1,5 @@
-#Python
-##Beginner:
+# Python
+## Beginner:
 * Variables
 * Conditions
 * Chained Conditionals
@@ -18,7 +18,7 @@
 * Mutable vs Immutable Data Types
 * Common Methods (upper, lower, add elem,...)
 * File IO (read/write text/csv file)
-##Intermediate:
+## Intermediate:
 * Object Oriented Programming (Classes and Objects)
 * Data Structures (queues, hashmaps, stacks, trees,...)
 * Comprehensions (lists, dicts, sets,...)
@@ -32,7 +32,7 @@
 * Environments
 * Modules
 * Async IO
-##Expert:
+## Expert:
 * Decorators
 * Generators 
 * Context Managers
@@ -51,3 +51,9 @@
 * Function Arguments
 * Shallow vs Deep Copying
 
+
+## NumPy
+* TODO
+
+## Pandas
+* TODO
