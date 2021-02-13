@@ -6,7 +6,7 @@
 #### Inmon
 #### Data Vault
 #### [Anchor Modeling](https://www.researchgate.net/publication/221268907_Anchor_Modeling)
-#### Normalization (3NF Poster)
+#### Normalization (3NF Poster + concrete example from 0NF to 3NF.)
 #### [Azure Modern Data Warehouse architecture](https://docs.microsoft.com/en-us/azure/architecture/solution-ideas/articles/modern-data-warehouse)
 #### [Databricks Unified Data Platform architecture](https://databricks.com/product/data-lakehouse)
 ### Data Integration
@@ -22,7 +22,7 @@
 #### Airflow
 #### other
 ### Data Storage
-#### Principles (OLAP vs OLTP, RDBMS vs NoSQL, Row vs column store, in memory DB,...)
+#### Principles (OLAP vs OLTP, RDBMS vs NoSQL, Row vs column store, in memory DB,...)(SQL ISO Standards, DML/DCL/DDL/TCL, Joins (inner,left,right,full,self,semi,anti semi,cross,cross apply,outer apply,... the APPLY operator is required when you have to use a table-valued function in the query.) (Google Joins Image).)
 #### SQL Server (Internals, TSQL, DBA)
 #### Oracle DB (Internals, PLSQL, DBA)
 #### Postgresql (Internals, pgSQL, DBA)
@@ -30,7 +30,7 @@
 #### Neo4j (cypher)
 ### Data Visualization
 #### Principles
-#### Power BI, DAX
+#### Power BI (PowerQuery, DAX, Q&A, Forecasting, Anomaly Detection, Smart Narrative, Regression, ZebraBI,...)
 #### Qlikview, Qliksense
 #### other
 ## DevOps
@@ -40,17 +40,18 @@
 #### Ansible
 #### Docker
 #### Jenkins
-#### other
+#### other (k8s, Prometheus, Istio, Networking,...)
 ## Software Engineering
 #### Principles (timeline, paradigms, best practices)
 #### Python
-#### Scala
+#### Scala (sbt, OOP, Functional)
 #### Programming problems (CTCI, leetcode,...)
 #### System Design
 ## Soft Skills
 #### General ITW questions
 #### Data Management, Data Governance, GDPR
 #### Scrum (US example, Product/Sprint backlog example, Burndown chart example, Jira screenshots, Azure DevOps Boards screenshots.)
+#### Agile, XP, Kanban, Prince2, PMP, SaFE,...
 #### MC, Case ITW
 #### IB, Fin Mod
 #### Powerpoint (shortcuts, icons,...)
