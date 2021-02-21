@@ -2,6 +2,9 @@
 
 * [Kimball Dimensional Techniques](https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/)
 * Database
+* Database types: relational, wcs, document, graph, key-value, search,...
+* RDBMS vs NoSQL
+* Row store vs Column store
 * [Datastore](https://en.wikipedia.org/wiki/Data_store)
 * "Columns are not fields. Rows are not records. Tables are not files." - Joe Celko.
 * [Data warehouse](https://en.wikipedia.org/wiki/Data_warehouse) (definition + criteria)
@@ -55,7 +58,8 @@
 * [Armstrong's axioms](https://en.wikipedia.org/wiki/Armstrong%27s_axioms)
 * [Functional Dependency](https://en.wikipedia.org/wiki/Functional_dependency)
 * [13 Base relations of James F. Allen's Interval Algebra in 1983](https://en.wikipedia.org/wiki/Allen%27s_interval_algebra#Relations)
-* SQL (ANSI 86 -> 16)
+* SQL Standards (ANSI 86 -> 16)
+* DML, DCL, DDL, TCL.
 * Conceptual Data Model
 * Logical Data Model
 * Physical Data Model
@@ -81,6 +85,7 @@
 * Vertical partitioning vs Horizontal partitioning vs Sharding.
 * OLTP vs OLAP.
 * [SQL JOINs](https://www.mssqltips.com/sqlservertip/1667/sql-server-join-example/) (INNER, LEFT, RIGHT, FULL, CROSS, SELF, SEMI, ANTI SEMI, STAR, CROSS APPLY, OUTER APPLY, INNER APPLY.)
+![SQL Joins Picture](https://upload.wikimedia.org/wikipedia/commons/9/9d/SQL_Joins.svg)
 * [SQL JOIN HINTS](https://www.mssqltips.com/sqlservertip/2917/sql-server-join-hints/)
   - [NESTED LOOP JOIN (NLJ)](https://en.wikipedia.org/wiki/Nested_loop_join) (efficient for small table on left side of join)
   - [HASH JOIN](https://en.wikipedia.org/wiki/Hash_join) (better than LOOP JOIN on large datasets but requires an equi-join)
