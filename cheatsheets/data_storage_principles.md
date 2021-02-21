@@ -19,14 +19,14 @@
   - Class 4: data come from operational systems and data warehouse.
   - Class 5: heavy aggregation/transformation on data. (slow and complex)
 * [SCDs (8)](https://en.wikipedia.org/wiki/Slowly_changing_dimension)
-  - SCD0: no change, original only.
-  - SCD1: last version, current only.
-  - SCD2: history (eff_from + eff_to + current_fl), new row.
-  - SCD3: previous-current. no history. new attribute.
-  - SCD4: history table, mini-dimension. (SCD1+SCD2)
-  - SCD5: SCD4+1: mini-dimension + type 1 outrigger.
-  - SCD6: SCD1+2+3 + from-to-current_fl. (SCD3 with history)
-  - SCD7: dual type 1 and type 2 dimensions.
+  - [SCD0](http://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/type-0): no change, original only.
+  - [SCD1](http://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/type-1): overwrite, last version, current only.
+  - [SCD2](http://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/type-2): history (eff_from + eff_to + current_fl), add new row.
+  - [SCD3](http://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/type-3): previous-current. no history. add new attribute.
+  - [SCD4](http://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/type-4-mini-dimension): history table, add mini-dimension. (SCD1+SCD2)
+  - [SCD5](http://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/type-5): SCD4+1: mini-dimension + type 1 outrigger.
+  - [SCD6](http://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/type-6): SCD1+2+3 + from-to-current_fl. (SCD3 with history)
+  - [SCD7](http://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/type-7): dual type 1 and type 2 dimensions.
 * Normalization (11)
   - 0NF
   - 1NF
@@ -79,7 +79,7 @@
 * Centralized vs Decentralized vs Distributed network.
 * Vertical partitioning vs Horizontal partitioning vs Sharding.
 * OLTP vs OLAP.
-* [SQL JOINs](https://www.mssqltips.com/sqlservertip/1667/sql-server-join-example/) (INNER, LEFT, RIGHT, FULL, CROSS, SELF, STAR, CROSS APPLY, OUTER APPLY, INNER APPLY.)
+* [SQL JOINs](https://www.mssqltips.com/sqlservertip/1667/sql-server-join-example/) (INNER, LEFT, RIGHT, FULL, CROSS, SELF, SEMI, ANTI SEMI, STAR, CROSS APPLY, OUTER APPLY, INNER APPLY.)
 * [SQL JOIN HINTS](https://www.mssqltips.com/sqlservertip/2917/sql-server-join-hints/)
   - [NESTED LOOP JOIN (NLJ)](https://en.wikipedia.org/wiki/Nested_loop_join) (efficient for small table on left side of join)
   - [HASH JOIN](https://en.wikipedia.org/wiki/Hash_join) (better than LOOP JOIN on large datasets but requires an equi-join)
