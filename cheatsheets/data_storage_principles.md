@@ -1,5 +1,6 @@
 # Data Storage Principles
 
+* [Kimball Dimensional Techniques](https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/)
 * Database
 * [Datastore](https://en.wikipedia.org/wiki/Data_store)
 * "Columns are not fields. Rows are not records. Tables are not files." - Joe Celko.
