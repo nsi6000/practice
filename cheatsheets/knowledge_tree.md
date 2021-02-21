@@ -1,14 +1,14 @@
 # Knowledge Tree
 ## Data Engineering
 ### Data Architecture
-#### General pipeline (SORs -> Ingestion (ETL, ELT, Stream) -> Storage -> Consumption (viz, ssbi, ml). DQ, MDM, DG.)
-#### Kimball
-#### Inmon
-#### Data Vault
-#### [Anchor Modeling](https://www.researchgate.net/publication/221268907_Anchor_Modeling)
-#### Normalization (3NF Poster + concrete example from 0NF to 3NF.)
-#### [Azure Modern Data Warehouse architecture](https://docs.microsoft.com/en-us/azure/architecture/solution-ideas/articles/modern-data-warehouse)
-#### [Databricks Unified Data Platform architecture](https://databricks.com/product/data-lakehouse)
+* General pipeline (SORs -> Ingestion (ETL, ELT, Stream) -> Storage -> Consumption (viz, ssbi, ml). DQ, MDM, DG.)
+* Kimball
+* Inmon
+* Data Vault
+* [Anchor Modeling](https://www.researchgate.net/publication/221268907_Anchor_Modeling)
+* Normalization (3NF Poster + concrete example from 0NF to 3NF.)
+* [Azure Modern Data Warehouse architecture](https://docs.microsoft.com/en-us/azure/architecture/solution-ideas/articles/modern-data-warehouse)
+* [Databricks Unified Data Platform architecture](https://databricks.com/product/data-lakehouse)
 ### Data Integration
 #### Principles
 #### SSIS, biml
@@ -22,7 +22,7 @@
 #### Airflow
 #### other
 ### Data Storage
-#### Principles (OLAP vs OLTP, RDBMS vs NoSQL, Row vs column store, in memory DB,...)(SQL ISO Standards, DML/DCL/DDL/TCL, Joins (inner,left,right,full,self,semi,anti semi,cross,cross apply,outer apply,... the APPLY operator is required when you have to use a table-valued function in the query.) (Google Joins Image).)
+#### Principles
 #### SQL Server (Internals, TSQL, DBA)
 #### Oracle DB (Internals, PLSQL, DBA)
 #### Postgresql (Internals, pgSQL, DBA)
@@ -48,15 +48,15 @@
 #### Programming problems (CTCI, leetcode,...)
 #### System Design
 ## Soft Skills
-#### General ITW questions
-#### Data Management, Data Governance, GDPR
-#### Scrum (US example, Product/Sprint backlog example, Burndown chart example, Jira screenshots, Azure DevOps Boards screenshots.)
-#### Agile, XP, Kanban, Prince2, PMP, SaFE,...
-#### MC, Case ITW
-#### IB, Fin Mod
-#### Powerpoint (shortcuts, icons,...)
-#### Excel (shortcuts, linear regression,...)
-#### Banking industry
-#### Insurance industry
-#### BA, FA
-#### DS, AI, ML
+* General ITW questions
+* Data Management, Data Governance, GDPR
+* Scrum (US example, Product/Sprint backlog example, Burndown chart example, Jira screenshots, Azure DevOps Boards screenshots.)
+* Agile, XP, Kanban, Prince2, PMP, SaFE,...
+* MC, Case ITW
+* IB, Fin Mod
+* Powerpoint (shortcuts, icons,...)
+* Excel (shortcuts, linear regression,...)
+* Banking industry
+* Insurance industry
+* BA, FA
+* DS, AI, ML
