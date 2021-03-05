@@ -40,6 +40,10 @@
 * remote
 * pull request (PR): request to merge the commit into master branch.
 * diff: set of changed lines within a single file.
+* git merge methods:
+	- Merge commit
+	- Merge commit with semi-linear history (only fast-forward merge)
+	- Fast-forward merge (no merge commit)
 
 
 # Best Practices
