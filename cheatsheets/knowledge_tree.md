@@ -7,6 +7,8 @@
 * Data Vault
 * [Anchor Modeling](https://www.researchgate.net/publication/221268907_Anchor_Modeling)
 * Normalization (3NF Poster + concrete example from 0NF to 3NF.)
+* [Lambda Architecture](https://en.wikipedia.org/wiki/Lambda_architecture)
+* [Kappa Architecture](https://eng.uber.com/kappa-architecture-data-stream-processing/)
 * [Azure Modern Data Warehouse architecture](https://docs.microsoft.com/en-us/azure/architecture/solution-ideas/articles/modern-data-warehouse)
 * [Databricks Unified Data Platform architecture](https://databricks.com/product/data-lakehouse)
 ### Data Integration
