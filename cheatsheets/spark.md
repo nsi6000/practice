@@ -6,7 +6,12 @@
 /spark/bin/spark-shell
 :help
 :load test.scala
-val cars = sc.read.schema("").csv("abc.csv")
+import org.apache.spark.sql.SparkSession
+val sc = SparkSession.builder().config("spark.master","local").getOrCreate()
+val cars = sc.read.option("header","true").csv("abc.csv")
+cars.write.format("csv").option("header","true").save("./cars.csv")
+cars.write.format("json").save("./cars.json")
+cars.write.save("./cars.parquet")
 cars.show()
 cars.take(3).foreach(println)
 ...
