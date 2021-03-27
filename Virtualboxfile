@@ -1,0 +1,45 @@
+# Virtual Box Setup
+* debian-10.8.0-i386-netinst.iso
+* su
+* apt-get update
+* apt-get install -y bash vim git wget gcc
+* git clone https://github.com/nsi6000/practice.git
+
+## Python
+apt-get install -y python3 python3-pip
+python3
+	print("Hello Python")
+	quit()
+pip3 install apache-airflow
+pip3 install pandas
+pip3 install numpy
+
+## Java Scala Spark
+apt-get install -y openjdk-11-jre
+export SPARK_VERSION=3.0.2
+export HADOOP_VERSION=3.2
+wget https://archive.apache.org/dist/spark/spark-3.0.2/spark-3.0.2-bin-hadoop3.2.tgz
+mkdir spark
+cd spark
+tar -xzvf spark-3.0.2-bin-hadoop3.2.tgz
+./spark-3.0.2-bin-hadoop3.2/bin/spark-shell
+	println("Hello spark!")
+	:q
+apt-get install -y scala
+scala
+	println("Hello Scala!")
+	:q
+
+## Java
+apt-get install -y openjdk-11-jdk
+vim helloworld.java
+´´´java
+class HelloWorld {
+	public static void main(String[] args){
+		System.out.println("Hello Java!");
+	}
+}
+´´´
+javac helloworld.java
+java HelloWorld
+
