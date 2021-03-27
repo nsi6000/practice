@@ -43,3 +43,6 @@ class HelloWorld {
 javac helloworld.java
 java HelloWorld
 
+wget https://neo4j.com/artifact.php?name=neo4j-community-4.2.4-unix.tar.gz
+tar -xzvf artifact.php\?name\=neo4j-community-4.2.4-unix.tar.gz
+neo4j-community-4.2.4/bin/neo4j start
