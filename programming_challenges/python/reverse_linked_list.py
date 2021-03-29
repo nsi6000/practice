@@ -4,6 +4,8 @@
 #     def __init__(self, val=0, next=None):
 #         self.val = val
 #         self.next = next
+
+# Iterative solution
 class Solution:
     def reverseList(self, head: ListNode) -> ListNode:
         #check if head is empty or is the only value
@@ -33,3 +35,22 @@ class Solution:
         p.next = head
         #return resulting linked list
         return p
+
+# Recursive solution
+class Solution:
+    def reverseList(self, head: ListNode) -> ListNode:
+        return self.reverse(head, None)
+    
+    def reverse(self, head: ListNode, new_head: ListNode) -> ListNode:
+        if (head == None):
+            return new_head
+
+        #defines second pointer as next of head
+        n = head.next
+        #moving pointer from right to left
+        head.next = new_head
+        #defines new_head as head (moves to right)
+        new_head = head
+        #defines head as next (moves to right)
+        head = n
+        return self.reverse(head, new_head)
