@@ -35,6 +35,7 @@ Iterative and Recursive.
 * lookup_install (K&R 145)
 * cat (K&R 162)
 * is_string_balanced
+* \[RAAD\] remove all adjacent duplicates in string. (Leetcode 1047)
 ## Linked Lists
 * \[PLL\] palindromic linked list.
 * \[RLL\] reverse linked list.
@@ -158,6 +159,7 @@ Iterative and Recursive.
 * Appartment Hunting.
 * Calendar Matching.
 * \[NOI\] Number of Islands.
+* \[MAOI\] Max Area of Islands. (Leetcode 695)
 * valid parenthesis.
 * valid palindrome.
 * valid anagram.
@@ -177,3 +179,10 @@ Iterative and Recursive.
 * is_array_rotation_of_another.
 * one-away strings.
 * rotating 2D array.
+* Fruit into Baskets. (Leetcode 904)
+* Number of Connected Components in an Undirected Graph.
+* Course Schedule.
+* Possible Bipartition.
+* Minimum Height Trees.
+
+
