@@ -34,17 +34,17 @@ Iterative and Recursive.
 * getword (K&R 136)
 * lookup_install (K&R 145)
 * cat (K&R 162)
-* is_string_balanced
+* is_string_balanced / valid_parentheses. (Leetcode 20)
 * \[RAAD\] remove all adjacent duplicates in string. (Leetcode 1047)
 ## Linked Lists
-* \[PLL\] palindromic linked list.
-* \[RLL\] reverse linked list.
+* \[PLL\] palindromic linked list. (Leetcode 234)
+* \[RLL\] reverse linked list. (Leetcode 206 / 92)
 * \[RDLL\] reverse doubly linked list.
-* \[MLL\] middle of linked list.
-* \[OELL\] odd-even linked list.
-* \[RLLE\] remove linked list elements.
+* \[MLL\] middle of linked list. (Leetcode 876)
+* \[OELL\] odd-even linked list. (Leetcode 328)
+* \[RLLE\] remove linked list elements. (Leetcode 203)
 * \[SLL\] shift linked list.
-* \[CLL\] is cycling linked list.
+* \[CLL\] is cycling linked list. (Leetcode 141 / 142)
 * \[NELL\] N-th element of a linked list.
 ## Sorts
 * shellsort (K&R 62)
@@ -58,8 +58,8 @@ Iterative and Recursive.
 * binary_search (K&R 58) [DC]
 ## Trees
 * \[BST\] BST
-* is_valid_BST/checkBST
-* is_same_BST
+* is_valid_BST/checkBST. (Leetcode 98)
+* is_same_BST. (Leetcode 100)
 * Trie
 * Heap
 * \[DFS\] DFS (HR)
@@ -68,15 +68,22 @@ Iterative and Recursive.
 * connected_cells (HR)
 * Kruskal MST [G]
 * Dijkstra SSSP [G]
-* \[IBT\] invert binary tree.
+* \[IBT\] invert binary tree. (Leetcode 226)
 * \[RST\] right sibling tree.
-* \[RSV\] binary tree right side view.
-* \[BTP\] binary tree paths.
-* \[BTT\] binary tree tilt.
-* \[MTBT\] merge two binary trees.
-* \[MDBT\] maximum depth of binary tree.
-* \[FBT\] flatten binary tree.
+* \[RSV\] binary tree right side view. (Leetcode 199)
+* \[BTP\] binary tree paths. (Leetcode 257)
+* \[BTT\] binary tree tilt. (Leetcode 563)
+* \[MTBT\] merge two binary trees. (Leetcode 617)
+* \[MDBT\] minimum/maximum depth of binary tree. (Leetcode 104 / 111)
+* \[FBT\] flatten binary tree. (Leetcode 114)
 * \[MPS\] binary tree minimum path sum.
+* \[MHT\] Minimum Height Trees. (Leetcode 310)
+* symmetric tree. (Leetcode 101)
+* \[LCA\] lowest common ancestor. (Leetcode 236)
+* \[IOT\] in-order traversal. (Leetcode 94)
+* \[POT\] post-order traversal. (Leetcode 145)
+* \[LOT\] level-order traversal. (Leetcode 102 / 107)
+* \[VOT\] vertical-order traversal. (Leetcode 987)
 ## Numbers
 * \[FIB\] Fibonacci. (TDD, recursive, iterative.)
 * \[FAC\] Factorial. (TDD, recursive, iterative.)
@@ -97,36 +104,32 @@ Iterative and Recursive.
 * share_price
 * \[BSM\] Black-Scholes-Merton Model. ([wikipedia link](https://en.wikipedia.org/wiki/Black%E2%80%93Scholes_model))
 ## Misc
-* \[NQP\] 8 Queens [CS]
+* \[NQP\] 8 Queens [CS] (Leetcode 51 / 52)
 * Rat Attack [CS]
 * abcde/ghijk [CS]
-* \[CCP\] coin_change/make_change [DP][G]
-* ransom_note
+* \[CCP\] coin_change/make_change [DP][G] (Leetcode 322)
+* ransom note. (Leetcode 383)
 * \[RMQ\] Range Minimum/Maximum Query. (Segment Tree)(cp1 p.22-25)
-* \[RSQ\] Range Sum Query. (Segment Tree)(cp1 p.22-25)
-* \[ICP\] ice_cream_parlor. [bsearch]
+* \[RSQ\] Range Sum Query. (Segment Tree)(cp1 p.22-25) (Leetcode 303 / 304 / 307 / 308)
+* \[ICP\] ice cream parlor. [bsearch]
 * staircase. [recursive][memo][DP][iterative]
-* lonely_integer. [bit manipulation]
+* lonely integer. [bit manipulation]
 * Greedy Activity Selection Problem. [G]
 * Huffman Codes. [G]
 * Station Balance. [G]
-* minesweeper. (assign numbers + solve it)
-* \[LCA\] lowest_common_ancestor.
+* minesweeper. (assign numbers + solve it) (Leetcode 529)
 * \[LDS\] longest divisible subset.
-* \[LIS\] longest increasing subsequence.
-* \[LCS\] longest common subsequence.
+* \[LIS\] longest increasing subsequence. (Leetcode 300)
+* \[LCS\] longest common subsequence. (Leetcode 1143)
 * \[LBS\] longest bitonic subsequence.
 * \[YCA\] youngest common ancestor.
-* \[LPS\] longest palindromic substring.
-* \[LCP\] longest common prefix.
+* \[LPS\] longest palindromic substring. (Leetcode 5)
+* \[LCP\] longest common prefix. (Leetcode 14)
 * \[LCM\] lowest common manager.
 * \[NDS\] non divisible subset.
 * \[TSP\] Traveling Salesman Problem.
-* \[IOT\] in-order traversal.
-* \[POT\] post-order traversal.
-* \[LOT\] level-order traversal.
-* \[VOT\] vertical-order traversal.
-* \[LRU\] LRU cache.
+* \[LRU\] LRU cache. (Leetcode 146)
+* \[LFU\] LFU cache. (Leetcode 460)
 * \[ILI\] interval list intersection.
 * \[NOR\] non-overlapping reactangles.
 * \[VMA\] valid montain array.
@@ -137,30 +140,28 @@ Iterative and Recursive.
 * \[MCM\] matrix chain multiplication.
 * \[MDS\] matrix diagonal sum.
 * \[FMP\] first missing positive.
-* \[MHT\] minimum height trees.
 * \[MSL\] merge sorted lists.
 * \[MSA\] merge sorted arrays.
 * \[MAD\] minimum absolute difference in an array.
-* \[ATN\] add two numbers.
+* \[ATN\] add two numbers. (Leetcode 2 / 445)
 * \[UNO\] unique number of occurence.
 * \[LSC\] longest string chain.
-* \[2SUM\] 2SUM.
+* \[2SUM\] 2SUM. (Leetcode 1)
 * \[3SUM\] 3SUM.
 * \[4SUM\] 4SUM.
 * \[01K\] 0 1 Knapsack Problem.
 * \[RPN\] Reverse Polish Notation.
-* course schedule.
+* course schedule. (Leetcode 207)
 * reverse words in a string.
 * pascal triangle.
 * balanced brackets.
 * balanced parenthesis.
-* Plus One.
+* Plus One. (Leetcode 66)
 * Airport Connections.
 * Appartment Hunting.
 * Calendar Matching.
-* \[NOI\] Number of Islands.
+* \[NOI\] Number of Islands. (Leetcode 200 / 305)
 * \[MAOI\] Max Area of Islands. (Leetcode 695)
-* valid parenthesis.
 * valid palindrome.
 * valid anagram.
 * Edit distance.
@@ -168,7 +169,8 @@ Iterative and Recursive.
 * Levenstein distance.
 * Monotonic array.
 * Frog Jump.
-* Reverse integer.
+* Reverse integer. (Leetcode 7)
+* Reverse string. (Leetcode 344)
 * maximum product subarray.
 * rotate a matrix. (CTCI)
 * all permutations of s in b. (CTCI)
@@ -181,8 +183,4 @@ Iterative and Recursive.
 * rotating 2D array.
 * Fruit into Baskets. (Leetcode 904)
 * Number of Connected Components in an Undirected Graph.
-* Course Schedule.
 * Possible Bipartition.
-* Minimum Height Trees.
-
-
