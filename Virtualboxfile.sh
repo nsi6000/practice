@@ -1,9 +1,9 @@
 # Virtual Box Setup
-* debian-10.8.0-i386-netinst.iso
-* su
-* apt-get update
-* apt-get install -y bash vim git wget gcc
-* git clone https://github.com/nsi6000/practice.git
+# debian-10.8.0-i386-netinst.iso
+su
+apt-get update
+apt-get install -y bash vim git wget gcc
+git clone https://github.com/nsi6000/practice.git
 
 ## Python
 apt-get install -y python3 python3-pip
@@ -42,6 +42,17 @@ class HelloWorld {
 ´´´
 javac helloworld.java
 java HelloWorld
+
+
+## Check versions
+python3 --version
+pip3 --version
+pip3 list | grep numpy
+pip3 list | grep pandas
+java --version
+scala -version #single-dash
+spark-shell --version
+
 
 wget https://neo4j.com/artifact.php?name=neo4j-community-4.2.4-unix.tar.gz
 tar -xzvf artifact.php\?name\=neo4j-community-4.2.4-unix.tar.gz
