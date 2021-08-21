@@ -17,8 +17,11 @@
 * :w //write-save
 * :xa //write-quit all files
 * :qa! //discard-quit all files
+* :e <file> #edit file
 * :sp //split
 * :vs //vertical-split
+* CTRL + ww #switch panes
+* ctrl + w + hjkl #switch panes
 * :set number //activate-line-numbering
 * :set cursorline //activate-cursor-line
 * :reg //show-registers
@@ -107,11 +110,42 @@ Number|   Operator   |Motion
 * q						exit recording of macro.
 * <n>@<a-z>				execute macro <a-z> <n> number of times.
 
-##Set spelling language
+## Set spelling language
 * " spelling
 * set spellfile =~/.vim/spell/en.utf-8.add,~/.vim/spell/de.utf-8.add
 * set spelllanf =en,de
 
 
+## comment lines for python
+```
+ctrl+v
+selected lines
+shift + I
+# + space
+esc
+```
+
+## todo
+```
+ctrl + v
+select items
+shift + X
+.
+```
+
+## indent lines with tabs
+```
+shift + v
+select lines
+shift + >>
+.....
+```
+
+## todo
+```
+CTRL + Z
+jobs
+fg %2
+```
 
 
