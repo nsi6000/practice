@@ -36,6 +36,7 @@ Iterative and Recursive.
 * cat (K&R 162)
 * is_string_balanced / valid_parentheses. (Leetcode 20)
 * \[RAAD\] remove all adjacent duplicates in string. (Leetcode 1047)
+* \[FUC\] first unique character in string. (Leetcode 387)
 ## Linked Lists
 * \[PLL\] palindromic linked list. (Leetcode 234)
 * \[RLL\] reverse linked list. (Leetcode 206 / 92)
@@ -87,8 +88,10 @@ Iterative and Recursive.
 ## Numbers
 * \[FIB\] Fibonacci. (TDD, recursive, iterative.)
 * \[FAC\] Factorial. (TDD, recursive, iterative.)
-* \[GCD\] GCD. (TDD, recursive, iterative.)
-* \[HPF\] abc.
+* \[GCD\] Greatest Common Divisor. (TDD, recursive, iterative.)
+* \[HPF\] Highest Prime Number.
+* \[PO2\] Power of Two. (Leetcode 231)
+* \[RS\] Running Sum. (Leetcode 1480)
 * Caesar cipher.
 * \[ROT13\] ROT13.
 * Vigenere cipher. ([wikipedia link](https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher))
@@ -135,7 +138,6 @@ Iterative and Recursive.
 * \[VMA\] valid montain array.
 * \[MPS\] minimum path sum.
 * \[FUN\] first unique number.
-* \[FUC\] first unique character in string.
 * \[SIP\] search insert position.
 * \[MCM\] matrix chain multiplication.
 * \[MDS\] matrix diagonal sum.
