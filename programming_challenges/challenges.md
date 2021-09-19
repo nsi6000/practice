@@ -36,7 +36,7 @@ Iterative and Recursive.
 * cat (K&R 162)
 * is_string_balanced / valid_parentheses. (Leetcode 20)
 * \[RAAD\] remove all adjacent duplicates in string. (Leetcode 1047)
-* \[FUC\] first unique character in string. (Leetcode 387)
+* \[FUC\] first unique / non-repeating character in string. (Leetcode 387)
 ## Linked Lists
 * \[PLL\] palindromic linked list. (Leetcode 234)
 * \[RLL\] reverse linked list. (Leetcode 206 / 92)
@@ -177,7 +177,6 @@ Iterative and Recursive.
 * rotate a matrix. (CTCI)
 * all permutations of s in b. (CTCI)
 * highest_population. (CTCI)
-* \[NRC\] Non-Repeating Character in String.
 * most frequent item in array.
 * common elements of two sorted arrays.
 * is_array_rotation_of_another.
