@@ -1,4 +1,43 @@
 # Python
+## Libraries:
+### ML and Viz:
+* numpy
+* pandas
+* matplotlib
+* numba
+* seaborn
+### CICD:
+* pylint
+* flake8
+* autopep8
+* pytest
+* Faker
+* proselint
+* bandit
+* vulture
+* behave
+### Connectors:
+* pyspark
+* pyflink
+* pulsar
+* pymongo
+* cassandra-driver
+* confluent-kafka
+* airflow
+* redis
+* pykka
+* pyodbc (SQL Server)
+* neo4j
+* (mysql)
+* psycopg\[binary\]
+### Misc:
+* msgpack
+* pprint
+* jsonschema
+* greatexpectations
+
+
+
 ## Beginner:
 * Variables
 * Conditions
