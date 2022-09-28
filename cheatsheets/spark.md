@@ -38,3 +38,33 @@ cars.take(3).foreach(println)
 * Processing Time Windows
 * Watermarking
 
+
+
+##Spark basics:
+* Spark Architecture
+* spark session builder
+* Data frames: group by, aggregates, missing data, dates and timestamps.
+* data sources
+* DF: columns+alias, expressions, aggregations, joins.
+* Spark Data Types
+* NULLs
+* Data Sets
+* Spark SQL
+* RDDs
+
+##Spark Streaming:
+* Streaming data frames
+* Streaming aggregations
+* Streaming joins
+* Streaming data sets
+* DStreams
+* DStreams transformations
+* Integration with Kafka
+* Integration with PostgreSQL
+* Integration with Cassandra
+* Event time windows
+* Processing time windows
+* Watermarking
+
+
+
