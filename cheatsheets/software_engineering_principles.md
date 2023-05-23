@@ -13,6 +13,11 @@
 
 ## Practice
 * Top-Down Design (reqs > docs (HLD+LLD/Design Docs(function type signature)) > comments > function type signatures > tests > code logic.)
+* Coding Pyramid/Pillars (from top to bottom)
+    * Code Optimization (idiomatic code, fast track, fail fast and loud, guard clauses, add error handling,...)
+    * Algorithmic Complexity (DSA) (time and space complexity)
+    * Clean Code (data typing, meaningful comments, improve readability,...) (remove dead code/comments/tests/imports/artifacts.)
+    * Pipeline (docs + lint + tests(TDD) + cvs(git+hooks) + CICD(make)(automated build) + logs + DevSecOps(bandit,vulture,sonarqube. secrets.))
 * Testing Pyramid
 * Test Coverage
 * Data Generation (Faker)
@@ -26,12 +31,12 @@
 * edge cases for testing
 * dependency management (python poetry, java maven, scala sbt,...)
 * Good Functions/Methods/Classes:
-- explicit: reveals intention and behavior.
-- DOTDIW
-- one level of abstraction per function.
-- no side effects.
-- SRP (in SOLID)
-- Rule of 30 ()
+    * explicit: reveals intention and behavior.
+    * DOTDIW
+    * one level of abstraction per function.
+    * no side effects.
+    * SRP (in SOLID)
+    * Rule of 30 ()
 
 
 ## Random stuff
