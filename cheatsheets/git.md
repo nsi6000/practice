@@ -62,6 +62,7 @@
 
 * Commit early, commit often.
 * Atomic commits. (same fix/feature, same file.)
+* Small diffs, small commits. (KISS)
 * Complete and tested commits.
 * Meaningful commit messages.
 	* max 50 characters.
