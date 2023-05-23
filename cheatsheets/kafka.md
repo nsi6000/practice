@@ -1,7 +1,7 @@
-#Kafka
+# Kafka
 
 
-##KSQLDB:
+## KSQLDB:
 * create stream
 * data-gen
 * stream manipulation/transformation
@@ -22,7 +22,7 @@
 
 
 
-##Kafka Streams:
+## Kafka Streams:
 * Kafka Stream 101 - WordCount app
 * Kafka Stream 102 - FavoriteColour app
 * Kafka Stream 103 - BankBalance app
@@ -66,7 +66,7 @@
 
 
 
-##Kafka Connect:
+## Kafka Connect:
 * Kafka Connect Architecture (with Sources, Sinks, Kafka Connect Workers.)
 * Tasks are executed by workers and composed of the Connector + the User Configuration.
 * Use Landoop Dockerfile Compose with the Landoop UI.
@@ -95,7 +95,7 @@
 * 	confluent-hub install <connector-name>
 
 
-##Kafka Schema Registry:
+## Kafka Schema Registry:
 * Avro vs CSV vs JSON (pros - cons)
 * 3 ways to Generate an Avro:
 * 	Generic Record (not good because no type safety and runtime error.)
