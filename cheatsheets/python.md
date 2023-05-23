@@ -243,3 +243,24 @@ Dictionary["b"] = "parrot"
 Dictionary.split(",")
 Dictionary.get("cat")
 ```
+
+## Azure VM Flask App
+* create VM in Azure (b4ms)
+* Add ports: VM settings -> Networking -> Add inbound/outbound port rule -> 5000.
+* ssh -i <azure-vm-key>.pem azureuser@<IP-address-of-vm>
+* sudo apt-get update
+* sudo apt-get install python3 / python3-flask
+* sudo pip3 install matplotlib
+* vim app.py
+    * matplotlib code (<https://matplotlib.org/stable/tutorials/introductory/quick_start.html#sphx-glr-tutorials-introductory-quick-start-py>)
+    * import random
+    * random.randint(1,5) x2
+    * refresh to see changes.
+* flask run --host 0.0.0.0
+* go to browser: <vm-ip>:5000
+* pip3 install yfinance
+* import yfinance as yf
+* tcs = yf.download('TCS', '2014-01-01', '2019-01-01')
+* ax.legend()
+* ax.plot(tcs['Volume'], label = 'TCS ticker')
+
