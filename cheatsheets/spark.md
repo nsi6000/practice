@@ -40,7 +40,7 @@ cars.take(3).foreach(println)
 
 
 
-##Spark basics:
+## Spark basics:
 * Spark Architecture
 * spark session builder
 * Data frames: group by, aggregates, missing data, dates and timestamps.
@@ -52,7 +52,7 @@ cars.take(3).foreach(println)
 * Spark SQL
 * RDDs
 
-##Spark Streaming:
+## Spark Streaming:
 * Streaming data frames
 * Streaming aggregations
 * Streaming joins
