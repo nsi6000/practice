@@ -131,3 +131,22 @@
   - In-memory indexes or clustered index scans?
   - How much memory on the machine?
   - This is why SQL Server doesn't document a maximum of rows.
+* sargability
+* Linguistic Determinism (of the importance to name things.) (<https://en.wikipedia.org/wiki/Linguistic_determinism#Pirah%C3%A3>)
+* Skeuomorphism (<https://www.red-gate.com/simple-talk/opinion/opinion-pieces/sql-style-habits-attack-of-the-skeuomorphs/>)
+* Transaction Isolation Levels (<https://learn.microsoft.com/en-us/sql/t-sql/statements/set-transaction-isolation-level-transact-sql?view=sql-server-ver16>)
+* State Transition Constraints (<https://www.red-gate.com/simple-talk/databases/sql-server/t-sql-programming-sql-server/state-transition-constraints/>)
+* 3VL (<https://www.red-gate.com/simple-talk/databases/sql-server/learn/sql-and-the-snare-of-three-valued-logic/>)
+* ISO Half Open Interval Model (Joe Celko)
+* De Morgans Laws (<https://en.wikipedia.org/wiki/De_Morgan%27s_laws>)
+* SQL is 80% DDL (i.e. constraints), 20% DML. "When a business rule is in the DDL, it is done one way, one place, one time." - Joe Celko (<https://www.red-gate.com/simple-talk/databases/sql-server/t-sql-programming-sql-server/constraint-yourself/>)
+* EAV as anti-pattern (<https://en.wikipedia.org/wiki/Entity%E2%80%93attribute%E2%80%93value_model>)
+* Execution Plan (<https://learn.microsoft.com/en-us/sql/relational-databases/performance/display-an-actual-execution-plan?view=sql-server-ver16>)
+* "Rows are not records; columns are not fields, and tables are not files." - Joe Celko
+* SQL Server Internals (<https://learn.microsoft.com/en-us/sql/relational-databases/sql-server-guides?view=sql-server-ver16>)
+* Page & Extents (<https://learn.microsoft.com/en-us/sql/relational-databases/pages-and-extents-architecture-guide?view=sql-server-ver16>)
+* Transaction Log (<https://learn.microsoft.com/en-us/sql/relational-databases/sql-server-transaction-log-architecture-and-management-guide?view=sql-server-ver16>)
+* Thread & Task Architecture (<https://learn.microsoft.com/en-us/sql/relational-databases/thread-and-task-architecture-guide?view=sql-server-ver16>)
+* Query Processing Engine (<https://learn.microsoft.com/en-us/sql/relational-databases/query-processing-architecture-guide?view=sql-server-ver16>)
+* Don't leave long running queries unattended.
+* Change Data Capture (CDC) (<https://www.confluent.io/learn/change-data-capture/>)
