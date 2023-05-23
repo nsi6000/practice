@@ -51,3 +51,11 @@
 * Sanctions
 * Cases of inforcement (Google,...)
 
+## Data Quality
+* 6 Dimensions of Data Quality (CUVACT)
+    * Completeness (NOT NULL + non-incomplete data) (e.g. missing or incomplete critical data)
+    * Uniqueness (UNIQUE / PK) (e.g. two times the same persons name.)
+    * Validity (correct data format) (DATA TYPE + CHECK) (e.g. phone number of the correct format.)
+    * Accuracy (The data represents the real world.) (e.g. John is John and not Jon.)
+    * Consistency (The data is the same from table to table.) (FK)
+    * Timeliness (availability of the data / fast access)
