@@ -10,13 +10,25 @@
 * Regularity (no special cases) (cf. Linus Torvalds TED talk Linked List example)
 * Modularity (simple parts, clean interface)
 * Representation (complex data structures, simple code) (cf. TAOUP)
+* CLEAN code (Cohesive, Loosely Coupled, Encapsulated, Assertive, Non-redundant code.)
+* CUPID (Composable, UNIX philosophy, Predictable, Idiomatic, Domain-based.) (<https://cupid.dev/>)
+* DOTDIW (do one thing, do it well.)
+* POGE.
+* RTFM.
+* TDD/unit tests.
+* LINT. ("Lint early, lint often." - Expert C Programming book)
+* Security / DevSecOps.
+* MECE.
+* DRY/WET/OAOO (Dont repeat yourself, Write everything twice, once and only once.)
+* KISS (Keep it short and simple).
+* Syntactic Consistency principle. (cf. McLennan Programming Principles book)
 
 ## Practice
 * Top-Down Design (reqs > docs (HLD+LLD/Design Docs(function type signature)) > comments > function type signatures > tests > code logic.)
 * Coding Pyramid/Pillars (from top to bottom)
     * Code Optimization (idiomatic code, fast track, fail fast and loud, guard clauses, add error handling,...)
     * Algorithmic Complexity (DSA) (time and space complexity)
-    * Clean Code (data typing, meaningful comments, improve readability,...) (remove dead code/comments/tests/imports/artifacts.)
+    * Clean Code (data typing (mypy), meaningful comments, improve readability,...) (remove dead code/comments/tests/imports/artifacts.)
     * Pipeline (docs + lint + tests(TDD) + cvs(git+hooks) + CICD(make)(automated build) + logs + DevSecOps(bandit,vulture,sonarqube. secrets.))
 * Testing Pyramid
 * Test Coverage
@@ -49,7 +61,7 @@
 * Sean Prashad (171) (<https://seanprashad.com/leetcode-patterns/>)
 * EPI Judge (<https://github.com/adnanaziz/EPIJudge>)
 * Big O Cheatsheet (<https://www.bigocheatsheet.com/>)
-* The Algorithms (<https://the-algorithms.com/>)
+* The Algorithms (<https://the-algorithms.com/>) (<https://github.com/TheAlgorithms>)
 * Fast Inverse Square Root for Quake III (FISR) (<https://www.youtube.com/watch?v=p8u_k2LIZyo>)
 * Hyperpolyglot (<https://hyperpolyglot.org/>)
 * Refactoring Guru (<https://refactoring.guru/design-patterns/java>)
@@ -65,6 +77,7 @@
 * FizzBuzz EE
 * Foolean
 * Subteranean Elves
+* pro/g/ramming challenges.
 * TIOBE index (<https://www.tiobe.com/tiobe-index/>)
 * Ruby Koans (<https://www.rubykoans.com/>)
 * Awesome System Design (<https://github.com/alexpate/awesome-design-systems>)
