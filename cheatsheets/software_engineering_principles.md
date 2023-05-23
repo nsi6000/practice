@@ -17,7 +17,7 @@
 * RTFM.
 * TDD/unit tests.
 * LINT. ("Lint early, lint often." - Expert C Programming book)
-* Security / DevSecOps.
+* Security / DevSecOps. (Bandit, Vulture, Sonarqube, Splint,... Secrets Management.)
 * MECE.
 * DRY/WET/OAOO (Dont repeat yourself, Write everything twice, once and only once.)
 * KISS (Keep it short and simple).
@@ -25,28 +25,54 @@
 * Follow conventions where possible (ISO, OpenAPI, Avro specs,...)
 * Boy-Scout Rule (Leave code base in better state than when you arrived.)
 * Docs as code. (<https://www.writethedocs.org/guide/docs-as-code/>)
+* UNIX Philosophy:
+    * Modularity (=> correct usage of functions)
+    * Readability (Write code that reads easily.)
+    * Extensability
+    * KISS programs
+    * Prototype ASAP
+    * Portability over Efficiency
+    * Store data in text files
+    * Every program is a filter
+* Symmetry
+* RERO / TETO / CECO / LELO / CECO2 (release, test, commit, lint, comment,...)
+* SPOT (single point of truth) (== DRY)
+* Developers Time >> Machines Time >> Machines Space.
+* 
 
 ## Practice
 * Top-Down Design (reqs > docs (HLD+LLD/Design Docs(function type signature)) > comments > function type signatures > tests > code logic.)
 * Coding Pyramid/Pillars (from top to bottom)
-    * Code Optimization (idiomatic code, fast track, fail fast and loud, guard clauses, add error handling,...)
+    * Code Optimization
+        * idiomatic code ("Pythonic code"))
+        * programming language specific optimizations
+        * fast track/path
+        * fail fast and loud
+        * defensive programming / guard clauses
+        * add error handling
     * Algorithmic Complexity (DSA) (time and space complexity)
     * Clean Code (data typing (mypy), meaningful comments, improve readability,...) (remove dead code/comments/tests/imports/artifacts.)
-    * Pipeline (docs + lint + tests(TDD) + cvs(git+hooks) + CICD(make)(automated build) + logs + DevSecOps(bandit,vulture,sonarqube. secrets.))
+    * Pipeline
+        * docs
+        * lint
+        * tests (TDD/RGR, Testing Pyramid, Test Coverage,...)
+        * CVS (git+hooks)
+        * CICD (make)(automated build)
+        * logs
+        * DevSecOps (bandit,vulture,sonarqube. secrets.)
 * Testing Pyramid
 * Test Coverage
 * Data Generation (Faker)
 * MADRs (<https://adr.github.io/>) (<https://github.com/npryce/adr-tools>)
 * Linting (<https://github.com/super-linter/super-linter>)
 * Fuzzing (radamsa)
-* CICD
 * Red-Green-Refactor / Arrange-Act-Assert.
-* Guard Clauses
+* Guard Clauses / Defensive Programming (IFs at start of functions | IF Not A: PRINT, RETURN.)
 * Close your files. (python WITH statement)
 * edge cases for testing
 * dependency management (python poetry, java maven, scala sbt,...)
 * Good Functions/Methods/Classes:
-    * explicit: reveals intention and behavior.
+    * explicit: reveals intention and behavior. (e.g. explicit return type in Python: f(x) -> Int: ...)
     * DOTDIW
     * one level of abstraction per function.
     * no side effects.
