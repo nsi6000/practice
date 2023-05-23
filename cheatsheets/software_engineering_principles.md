@@ -79,6 +79,16 @@
     * SRP (in SOLID)
     * Rule of 30 ()
 
+## First Commits
+* <https://www.firsttimersonly.com/>
+* <https://up-for-grabs.net/#/>
+* <https://www.codetriage.com/>
+* <https://firstcontributions.github.io/>
+* <https://goodfirstissue.dev/>
+* <https://goodfirstissues.com/>
+* <https://www.makeareadme.com/>
+* <https://github.com/matiassingers/awesome-readme>
+* <https://www.contributor-covenant.org/>
 
 ## Random stuff
 * vimtutorial
