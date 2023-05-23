@@ -22,6 +22,9 @@
 * DRY/WET/OAOO (Dont repeat yourself, Write everything twice, once and only once.)
 * KISS (Keep it short and simple).
 * Syntactic Consistency principle. (cf. McLennan Programming Principles book)
+* Follow conventions where possible (ISO, OpenAPI, Avro specs,...)
+* Boy-Scout Rule (Leave code base in better state than when you arrived.)
+* Docs as code. (<https://www.writethedocs.org/guide/docs-as-code/>)
 
 ## Practice
 * Top-Down Design (reqs > docs (HLD+LLD/Design Docs(function type signature)) > comments > function type signatures > tests > code logic.)
