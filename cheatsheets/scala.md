@@ -65,7 +65,7 @@
 
 
 
-##SCALA BASICS:
+## SCALA BASICS:
 values, variables and types (Unit == no return)
 expressions
 code block (result = result last expression)
@@ -76,7 +76,7 @@ type inference
 	default and named arguments
 	smart operations on strings
 
-##OOP:
+## OOP:
 method notations
 objects
 inheritance
@@ -89,7 +89,7 @@ enums
 exceptions (try-throw-catch-case-finally)
 packaging and imports
 
-##Functional:
+## Functional:
 anonymous functions
 HOFs
 curries
@@ -107,7 +107,7 @@ Braceless syntax
 => Macros.
 => Functors, Monads, Applicative Functors.
 
-##Scala Best Practices:
+## Scala Best Practices:
 - On mutability and immutability: recursion is ok with no impact (vs loops) if used correctly. (tail rec optimized)
 - NULLs vs Options: get rid of all NULLs in Scala. Use Option->Some+None. (use Scalastyle library)
 - May the Fors be with you: for(Generator(<-), Guard(if), Inline Assignment(=))-yield.
@@ -126,7 +126,7 @@ Braceless syntax
 
 
 
-##Scala Performance:
+## Scala Performance:
 - when and where to optimize:
 	- the code should work.
 	- KISS.
