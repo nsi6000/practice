@@ -8,6 +8,7 @@
 * <https://githooks.com/>
 * <https://pre-commit.com/>
 * <https://www.conventionalcommits.org/en/v1.0.0/>
+* <https://github.com/tommarshall/git-good-commit>
 
 ## Commands
 * git init
@@ -54,6 +55,7 @@
 * Git Flow
 * pre-commit
 * semver
+* git good commit
 * trunk-based development
 
 # Best Practices
