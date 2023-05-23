@@ -11,6 +11,9 @@
 * [Kappa Architecture](https://eng.uber.com/kappa-architecture-data-stream-processing/)
 * [Azure Modern Data Warehouse architecture](https://docs.microsoft.com/en-us/azure/architecture/solution-ideas/articles/modern-data-warehouse)
 * [Databricks Unified Data Platform architecture](https://databricks.com/product/data-lakehouse)
+* [Modern Data Architecture with Databricks on Azure](https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/azure-databricks-modern-analytics-architecture)
+* [CI/CD on Azure for AKS apps with GitHub Actions and GitFlow](https://learn.microsoft.com/en-us/azure/architecture/guide/aks/aks-cicd-github-actions-and-gitops)
+* [Timexteder Architecture on Azure](https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/cloud-scale-analytics-with-discovery-hub)
 ### Data Integration
 #### Principles
 #### SSIS, biml
