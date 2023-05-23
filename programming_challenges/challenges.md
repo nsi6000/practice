@@ -185,3 +185,72 @@ Iterative and Recursive.
 * Fruit into Baskets. (Leetcode 904)
 * Number of Connected Components in an Undirected Graph.
 * Possible Bipartition.
+
+
+
+
+## 4 times 10
+1. sets, stacks and pointers.
+    1. contains duplicate
+    2. valid anagram
+    3. 2SUM (set/dict)
+    4. encode-decode strings
+    5. LCS1 (128) (set) (Longest Consecutive Sequence)
+    6. 2SUM II. (167) (2 pointers)
+    7. BSS. (121) (2 pointers)
+    8. valid palindrome. (2 pointers)
+    9. valid parenthesis. (stack)
+    10. 3SUM. (15) (2 pointers)
+    11. PlusOne
+    12. Container with Most Water (2 pointers)
+    13. Trapping Rain Water (2 pointers)
+3. linked lists.
+    1. RLL
+    2. CLL
+    3. M2LL
+    4. MKLL
+    5. LRU Cache
+    6. Happy Number (202) (set or LLC)
+5. DP, BT and Greedy.
+    1. [BT] Palindrome Partitioning.
+    2. [BT] N Queens.
+    3. [BT] Combination Sum I & II.
+    4. [BT] Word Search.
+    5. [DP] LPS (Longest Palindromic Substring)
+    6. [DP] Decode Ways
+    7. [DP] Coin Change I & II
+    8. [DP] LIS
+    9. [DP] LCS2 (Longest Common Subsequence)
+    10. [DP] MPS (Maximum Product Subarray)
+    11. [DP] Unique Paths
+    12. [DP] Edit Distance
+    13. [DP Top-Down Memoization] Regular Expression Matching
+7. Trees and Graphs
+    1. IBT (invert binary tree)
+    2. balanced BT (is binary tree balanced)
+    3. same tree
+    4. LCA
+    5. valid BST
+    6. 4 traversals
+    7. NOI
+    8. MAOI
+    9. Course Schedule I & II
+    10. clone graph
+    11. graph valid tree
+    12. alien dictionary
+
+
+    1. LRCR
+    2. Min Stack
+    3. eval RPN
+    4. BSTs: ...
+    5. Tries: ...
+    6. HeapsPiqeue: ...
+    7. Greedy: ...
+    8. Intervals: ...
+    9. Bit Manipulation: ...
+
+
+
+
+
