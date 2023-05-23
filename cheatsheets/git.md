@@ -4,6 +4,10 @@
 * <https://lab.github.com/>
 * <https://github.com/dictcp/awesome-git>
 * <https://github.com/sdras/awesome-actions>
+* <https://semver.org/>
+* <https://githooks.com/>
+* <https://pre-commit.com/>
+* <https://www.conventionalcommits.org/en/v1.0.0/>
 
 ## Commands
 * git init
@@ -45,6 +49,12 @@
 	- Merge commit with semi-linear history (only fast-forward merge)
 	- Fast-forward merge (no merge commit)
 
+* conventional commits
+* git hooks
+* Git Flow
+* pre-commit
+* semver
+* trunk-based development
 
 # Best Practices
 
