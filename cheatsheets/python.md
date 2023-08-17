@@ -8,6 +8,7 @@
 * seaborn
 ### CICD:
 * pylint
+* pylama
 * flake8
 * autopep8
 * pytest
@@ -16,6 +17,13 @@
 * bandit
 * vulture
 * behave
+* see [RealPython Refactoring article](https://realpython.com/python-refactoring/)
+	* rope (refactoring using the REPL)
+	* radon (cc: code complexity / mi: maintenance index)
+	* wily (=> as hook using pre-commit)
+	* dataclasses (python >3.7) (or "attrs" if lower version)
+	* Handling Complex Dictionaries With Query Tools => JMESPath, glom, asq, and flupy.
+
 ### Connectors:
 * pyspark
 * pyflink
