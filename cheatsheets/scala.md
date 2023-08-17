@@ -437,7 +437,118 @@ abstract class Person(val name: String) { var id: Int /* abstract field. not ins
 val roger = new Person //generate an error "cannot be instanciated".
 ```
 
+## Functional Programming in Scala
+```scala
+println("Hello world!")
+//fp == only pure functions == no side effects.
+//rt == referential transparency == an expression can be replaced by its results and not change the meaning of the program.
+//a function is pure iff its body is RT for RT inputs.
 
 
+//comment
+/* another comment */
+/** a documentation comment */
+
+vim test.scala
+object MyModule {
+	def abs(n: Int): Int = {
+		if (n < 0) -n else n
+	}
+	private def formatAbs(x: Int) = {
+		val msg = "The absolute value of %d is %d."
+		msg.format(x, abs(x))
+	}
+	def main(args: Array[String]): Unit = {
+		println(formatAbs(-42))
+	}
+}
+scalac test.scala		scala MyModule
+
+scala
+:load test.scala
+MyModule.formatAbs(-42)
+
+import MyModule.abs
+import MyModule._
+abs(-42)
+
+//function == LHS/signature + RHS/definition.
+
+object test {
+def factorial(n: Int): Int = {
+	@annotation.tailrec
+	def go(n: Int, acc: Int): Int = {
+		if (n <= 0) acc
+		else go(n - 1, n * acc) //add "+ 1" to break tailrec at compile time.
+	}
+	go(n, 1)
+}
+	def abs(n: Int): Int = {
+		if (n < 0) -n else n
+	}
+	def formatResult(name:String, n: Int, f: Int => Int) = { //HOF: higher-order function.
+		val msg = "The %s of %d is %d."
+		msg.format(name, n, f(n))
+	}
+	//def fib(n: Int): Int //TODO.
+	def main(args: Array[String]): Unit = {
+		println(formatResult("absolute value", -42, abs))
+		println(formatResult("factorial", 5, factorial))
+	}
+}
+scalac test.scala
+scala test
+
+def findFirst[A](ds: Array[A], p: A => Boolean): Int = { //Polymorphic function.
+	def loop(n: Int): Int = {
+		if (n >= ds.length) -1 //value not found when end of array.
+		else if (p(ds(n))) n //value found.
+		else loop(n + 1) //continue looking.
+	}
+	loop(0) //start at beginning of the array.
+}
+findFirst(Array(7, 9, 13), (x: Int) => x == 9) //Anonymous function.
+
+(x: Int, y: Int) => x == y
+res4(6, 7) //false
+res4(6, 6) //true
+
+//def isSorted[A](as: Array[A], gt: (A, A) => Boolean): Boolean = { ... } //TODO.
+
+//partial application.
+//currying.
+//uncurrying.
+//function composition.
+
+//compose - andThen.
+val my_f = (x: Double) => math.Pi / 2 - x
+val my_cos = f andThen math.sin
+//val my_cos2 = math.sin compose f //doesn't work. precedence error I think...
+my_f(5)
+my_cos(2)
 
 
+//Error handling: throwing exception breaks RT.
+//Solution: return a value that says it's an exception.
+
+//Partial function: function that doesn't work for all inputs and/or inputs. (e.g. "mean" doesn't work on an empty list input.)
+//Total function: function which associate every input to an output.
+
+//Option == Some + None.
+
+//Either == Left (failure) + Right (success).
+
+def mean(xs: IndexedSeq[Double]): Either[String, Double] =
+	if (xs.isEmpty)
+		Left("mean of empty list!")
+	else
+		Right(xs.sum / xs.length)
+
+//return the stack trace information.
+def safeDiv(x: Double, y: Double): Either[Exception, Double] =
+	try {
+		Right(x / y)
+	} catch {
+		case e: Exception => Left(e)
+}
+```
