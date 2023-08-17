@@ -146,4 +146,290 @@ Braceless syntax
 => Use bitshift random generator.
 
 
+## Random notes
+
+=> no break/continue. avoid "return".
+
+
+PATH=$PATH:/usr/local/sbin/sbt/bin/
+sbt new scala/scala-seed.g8 --branch 2.12.x
+sbt clean
+sbt test
+sbt package
+
+```scala
+object Hello extends App {
+	def main(args: Array[String]) {
+		println("Hello.")
+	}
+}
+```
+
+
+## Scala 101:
+* source: FP in Scala book.
+```scala
+val test: String = "Hello"
+	println("Hello " + "World")
+printf("Hello %s!", "World")
+import scala.io.StdIn.readLine ; val lastName = readLine("Last Name: ")
+4.+(5)
+"Hello".toUpperCase
+1 to 10
+var i = 1; i += 1 (no i++)
+import scala.math._ ; sqrt(2)
+	"Hello"(4)
+var i = 1; if (i > 0) "positive" else -1
+var i = 1; var n = 10; while (n > 0) { i += n ; n -= 1}; println("i: " + i)
+var x = 1; var n = 10; for (i <- 1 to n) { x *= n }
+val s = "Hello"; for (i <- 0 until s.length if i != 2) println(i + " " + s(i))
+for-comprehension: for (i <- 1 to 10) yield i % 3
+function: def fac(n: Int): Int = if (n <= 0) 1 else n * fac(n - 1); fac(6)
+default & named args: def decorate(str: String, left: String = "[", right: String = "]") = { left + str + right }; decorate("Hello", left = ">>>[")
+variable args: def sum(args: Int*) = {var r = 0; for (arg <- args) r += arg; r}; sum(1 to 5: _*)
+procedure(no return value, no "="): def box(s: String): Unit = {println("|" + s + "|")}; box("Hello")
+lazy values: lazy val i = 1
+```
+
+## Arrays:
+```scala
+val n = new Array[Int](10)
+val s = Array("Hello", "World")
+s(0)
+s(0) = "Goodbye"
+s
+import scala.collection.mutable.ArrayBuffer
+val b = ArrayBuffer[Int]()
+b += 1
+b += (1, 2, 3)
+b ++= Array(4, 5, 6)
+b.trimEnd(5)
+b.insert(2, 6, 7, 8)
+b.remove(2, 3)
+b.append(1, 2, 3)
+val c = b.toArray
+b.sum / c.sum
+b.min / c.min
+b.max / c.max
+	val bSorted = b.sorted(_ < _)
+scala.util.Sorting.quickSort(c)
+b.mkString("<", ",", ">")
+Multidim array: val m = Array.ofDim[Double](3, 4)
+m(1)(2) = 42
+	al m2 = new Array[Array[Int]](10)
+for (i <- 0 until b.length) println(i + " : " + b(i))
+for (i <- 0 until (b.length, 2)) println(i + " : " + b(i))
+for (elem <- b) println(elem)
+	val r = for (elem <- b if b % 2 == 0) yield 2 * elem
+val r = b.filter(_ % 2 == 0).map(2 * _)
+```
+
+## Map (~ HashTable or TreeMap) & Tuples:
+```scala
+idiomatic: val scores = Map("Alice" -> 10, "Bob" -> 3, "Cindy" -> 8)
+non-idiomatic: val scores = Map(("Alice", 10), ("Bob", 3), ("Cindy", 8))
+val scores = scala.collection.mutable.Map("Alice" -> 10, "Bob" -> 3, "Cindy" -> 8)
+val scores = new scala.collection.mutable.HashMap[String, Int]
+val bobsScore = scores("Bob")
+non-idiomatic: val bobsScore = if (scores.contains("Bob")) scores("Bob") else 0
+idiomatic: val bobsScore = scores.getOrElse("Bob", 0)
+scores.get("Bob") //returns Option/Some.
+on mutable map: scores("Bob") = 10 //create or update.
+scores += ("Alice" -> 10, "Cindy" -> 8)
+scores -= "Alice"
+on immutable (copy + upsert): val/var newScores = scores + ("Bob" -> 1, "David" -> 9)
+val newScores = scores - "Alice"
+for ((k, v) <- scores) println(k + " : " + v)
+scores.keySet; for (v <- scores.values) println(v)
+reversing keys-values: for ((k, v) <- scores) yield (v, k)
+TreeMap: val scores = scala.collection.immutable.SortedMap("Alice" -> 10, "Bob" -> 3, "Cindy" -> 8)
+Insertion order access with LinkedHashMap: val scores = scala.collection.mutable.LinkedHashMap("Alice" -> 10, "Bob" -> 3, "Cindy" -> 8)
+Tuple: val t = (1, 3.14, "Fred")
+val second = t._2 //position of tuples start at 1, not 0.
+tuple pattern-matching: val (first, second, _) = t
+Zipping:
+val symbols = Array("<", "-", ">")
+val counts = Array(2, 10, 2)
+val pairs = symbols.zip(counts)
+for ((s, n) <- pairs) print(s * n)
+pairs.toMap
+```
+
+## Classes & Objects:
+```scala
+//general class definition.
+class Counter {
+	private var value = 0 //you must initialize the field.
+	def increment() { value += 1 } //Methods are public by default.
+	def current() = value //or without () to enforce not using ().
+}
+val myCounter = new Counter //or new Counter().
+myCounter.increment() //use () with a mutator.
+println(myCounter.current) //don't use () with an accessor.
+
+//getter and setter create automatically by Scala.
+vim Person.scala
+	class Person {
+		var age = 0
+	}
+scalac Person.scala
+	scala -private Person //doesn't work
+javap -p Person.class //shows getter and setter created under the hood by Scala.
+val fred = new Person
+fred.age = 21 //calls fred.age_=(21)
+println(fred.age) //calls the method fred.age()
+
+//redefine getter and setter manually.
+class Person {
+	private var privateAge = 0 //make private and rename.
+	def age = privateAge
+	def age_=(newValue: Int) {
+		if (newValue > privateAge) privateAge = newValue; //can't get younger.
+	}
+}
+val fred = new Person
+fred.age = 30
+fred.age = 21
+println(fred.age) //30
+
+//object-private fields. Scala allows access to private fields of all oobjects of its class.
+class Counter {
+	private var value = 0
+	def increment() { value += 1 }
+	def ifLess(other: Counter) = value < other.value //can access "other" since it's a Counter object.
+	//to manually restrict access, use the statement below.
+	private[this] var value = 0 //accessing someObject.value is not allowed.
+	//to generate Java-compliant getter and setter names, use @BeanProprety.
+	@BeanProprety var name: String = _ //generates name, name_, getName(), setName().
+}
+
+//Auxilliary constructors.
+class Person {
+	private var name = ""
+	private var age = 0
+
+	def this(name: String) { //An auxilliary constructor.
+		this() //calls primary constructor. mandatory.
+		this.name = name
+	}
+
+	def this(name: String, age: Int) { //Another auxilliary constructor.
+		this(name) //calls the previous auxilliary constructor. mandatory.
+		this.age = age
+	}
+}
+val p1 = new Person //Primary constructor.
+val p2 = new Person("Fred") //First auxilliary constructor.
+val p3 = new Person("Fred", 42) //Second auxilliary constructor.
+
+//Primary constructor.
+class Person(val name: String = "John", val age: Int = 20) {
+	println("Just created another person.")
+	def description = name + " is " + age + " years old."
+}
+val fred = new Person("Fred", 42)
+val john = new Person
+println(fred.description)
+println(john.description)
+
+//to make the private primary constructor, use this...
+class Person private(val id: Int) {}
+
+//nested classes
+import scala.collection.mutable.ArrayBuffer
+class Network {
+	class Member(val name: String) {
+		var contacts = new ArrayBuffer[Member]
+	}
+	private val members = new ArrayBuffer[Member]
+	def join(name: String) = {
+		val m = new Member(name)
+		members += m
+		m
+	}
+}
+val chatter = new Network
+val myFace = new Network
+val fred = chatter.join("Fred")
+val wilma = chatter.join("Wilma")
+fred.contacts += wilma //OK. Adding wilma is allowed since in the same "chatter" object.
+val barney = myFace.join("Barney")
+fred.contacts += barney //No. Not allowed since "myFace" is not "chatter".
+//=> 2 solutions: add a companion object or use a type projection (new ArrayBuffer[Network#Member]).
+```
+
+## Objects:
+```scala
+//Singletons: single class instance.
+object Accounts { private var lastNumber = 0; def newUniqueNumber() = { lastNumber += 1; lastNumber } }
+Accounts.newUniqueNumber()
+
+//companion object: class and its companion object. Use the same name.
+//in REPL, class and object must be defined in the same :paste block. In code, should be in the same source file.
+class Accounts { val id = Accounts.newUniqueNumber() }
+object Accounts { private var lastNumber = 0; def newUniqueNumber() = { lastNumber += 1; lastNumber } }
+val test1 = new Accounts
+val test2 = new Accounts
+println(test1.id + test2.id)
+
+//Enumerations
+object TrafficLightColor extends Enumeration { val Red, Yellow, Green = Value }
+TrafficLightColor.Red
+object TrafficLightColor2 extends Enumeration {
+	type TrafficLightColor2 = Value //type alias. useful for imports.
+	val Red = Value(0, "Stop") //assigned both ID and name.
+	val Yellow = Value(10) //name = "Yellow".
+	val Green = Value("Go") //ID = 11.
+}
+println("" + TrafficLightColor2.Red.id + " " + TrafficLightColor2.Red)
+println("" + TrafficLightColor2.Yellow.id + " " + TrafficLightColor2.Yellow)
+println("" + TrafficLightColor2.Green.id + " " + TrafficLightColor2.Green)
+import TrafficLightColor2._
+def doWhat(color: TrafficLightColor2) = { if (color == Red) "stop" else "go" }
+doWhat(TrafficLightColor2.Red)
+doWhat(TrafficLightColor2.Green)
+//list all values from ENUM.
+for (c <- TrafficLightColor2.values) println(c.id + ": " + c)
+//access ENUM values.
+TrafficLightColor2(10)
+TrafficLightColor2.withName("Yellow")
+
+//Class extension
+class Person { val name: String = "" }
+class Employee extends Person { val EmployeeID = 0 }
+val fred  = new Employee
+fred.name
+
+//method overriding
+class Person (val name: String = "") { override def toString = getClass.getName + "[name=" + name + "]" }
+val fred = new Person("Fred")
+fred.toString
+
+//access superclass with keyword "super"
+class Employee extends Person { val salary = 1000; override def toString = super.toString + "[salary=" + salary + "]" }
+val fred = new Employee
+
+//Type check and cast
+val p = new Employee
+if (p.isInstanceOf[Employee]) { val s = p.asInstanceOf[Employee]; s } //check if object belongs to a given class.
+if (p.getClass == classOf[Employee]) { val w = p.asInstanceOf[Employee]; w } //refers to object but not a subclass.
+//process using pattern-matching.
+val p = new Person("Chad")
+class Bird {}; val b = new Bird
+def typeTest(p: Object) = {
+	p match {
+		case s: Person => println("Person name is: " + s.name) //process s as a Person.
+		case _ => println("not a Person!") //p isn't an Person.
+	}
+}
+typeTest(p); typeTest(b)
+
+//abstract classes: class that cannot be instanciated.
+abstract class Person(val name: String) { var id: Int /* abstract field. not instanciated. */ }
+val roger = new Person //generate an error "cannot be instanciated".
+```
+
+
+
+
 
