@@ -5,10 +5,41 @@
 3. [G] Greedy
 4. [DP] Dynamic Programming
 Iterative and Recursive.
+
 ## 3 Steps
 1. Strategical: Better algorithms and data structures.
 2. Tactical: Solution Optimization. (dummy values for Greedy for Station Balance.)
 3. Operational: Technical Optimization.
+
+## Code Interview Answer process
+1. Re-state the problem (in your own words).
+2. Ask clarifying questions.
+3. State assumptions/hypothesis.
+4. Draw a picture/diagram.
+5. Define the algorithm.
+6. Specify space-time complexity.
+7. Pro-con analysis.
+8. Tests.
+9. Code.
+10. Think out loud and explain your thought process.
+11. Structure.
+12. Positive mindset.
+
+## List of Data Structures
+* Array
+* ArrayList / Dynamic Array
+* Singly Linked List
+* Doubly Linked List
+* Skip List
+* Stack
+* Queue
+* Hash Table
+* BST
+* B-Tree
+* RB-Tree
+* AVL-Tree
+
+
 ## Strings
 * Hello World.
 * FizzBuzz.
