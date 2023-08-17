@@ -63,6 +63,8 @@
 * Commit early, commit often.
 * Atomic commits. (same fix/feature, same file.)
 * Small diffs, small commits. (KISS)
+* Protect main branch against direct commits. (cf pre-commit no-commit-to-branch)
+* Don't push .git folder. (security risk. cf Github's WangYihang/GitHacker)
 * Complete and tested commits.
 * Meaningful commit messages.
 	* max 50 characters.
