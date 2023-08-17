@@ -264,3 +264,16 @@ Dictionary.get("cat")
 * ax.legend()
 * ax.plot(tcs['Volume'], label = 'TCS ticker')
 
+## Idiomatic python:
+* range() and enumerate()
+* list/dict comprehension
+* print() and breakpoint()/<variable-name>/n.
+* f-strings
+* sorted(animals, key=lambda animal: animal['age'])
+* DSA: set, generator, dict, default dict, Counter, deque, namedtuple.
+* functools - HOFs...
+* itertools - iterators...
+* \_\_main__
+* zip/unzip dicts (**a)
+
+
