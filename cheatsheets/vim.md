@@ -15,6 +15,10 @@
 * :help <command> :q //help
 * :read !ls *pdf //input list of PDF files
 * :color-scheme industry //change color scheme to Industry theme
+* "*yy //copy to primary
+* "*p //paster from primary
+* "+yy //copy to clipboard
+* "+p //paster from clipboard
 * :wq //write-quit
 * :x //idem
 * :q! //discard-quit
