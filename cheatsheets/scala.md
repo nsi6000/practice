@@ -6,6 +6,8 @@
 * [Tour of Scala](https://docs.scala-lang.org/tour/tour-of-scala.html)
 * [Twitter's Scala School](https://twitter.github.io/scala_school/)
 * [Scala-Exercises.org](https://www.scala-exercises.org/)
+* [Twitter's Effective Scala](https://twitter.github.io/effectivescala/)
+* [RockTheJVM website](https://rockthejvm.com/)
 
 ## Setup
 * docker run -it --name scala_dev hseeberger/scala-sbt:8u222_1.3.5_2.13.1 bash
