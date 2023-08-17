@@ -278,15 +278,27 @@ def average(nums):
     2. [BT] N Queens.
     3. [BT] Combination Sum I & II.
     4. [BT] Word Search.
-    5. [DP] LPS (Longest Palindromic Substring)
-    6. [DP] Decode Ways
-    7. [DP] Coin Change I & II
-    8. [DP] LIS
-    9. [DP] LCS2 (Longest Common Subsequence)
-    10. [DP] MPS (Maximum Product Subarray)
-    11. [DP] Unique Paths
-    12. [DP] Edit Distance
-    13. [DP Top-Down Memoization] Regular Expression Matching
+    5. [BT] Sudoku.
+    6. [BT] Hamiltonian Cycle Problem.
+    7. [BT] Maze Solving.
+    8. [DP] LPS (Longest Palindromic Substring). (5)
+    9. [DP] Decode Ways
+    10. [DP] Coin Change I & II (322)
+    11. [DP] LIS (Longest Increasing Subsequence)
+    12. [DP] LCS2 (Longest Common Subsequence)
+    13. [DP] MPS (Maximum Product Subarray)
+    14. [DP] Unique Paths
+    15. [DP] Edit Distance
+    16. [DP] MED (Minimum Edit Distance)
+    17. [DP] Rod Cutting.
+    18. [DP] SSP (Subset Sum Problem).
+    19. [DP Top-Down Memoization] Regular Expression Matching
+    20. [DP] Trapping Rain Water. (42)
+    21. [DP] Buy & Sell Stock. (121)
+    22. [DP] House Robber. (198)
+    23. [DP] Climbing Stairs. (70)
+    24. [Greedy] Knapsack.
+    25. [Greedy] Activity Selection.
 7. Trees and Graphs
     1. IBT (invert binary tree)
     2. balanced BT (is binary tree balanced)
