@@ -3,6 +3,9 @@
 * [https://docs.scala-lang.org/overviews/scala-book/introduction.html](https://docs.scala-lang.org/overviews/scala-book/introduction.html)
 * [Scala Style Guide](https://docs.scala-lang.org/style/)
 * [Scala Official Cheasheet](https://docs.scala-lang.org/cheatsheets/)
+* [Tour of Scala](https://docs.scala-lang.org/tour/tour-of-scala.html)
+* [Twitter's Scala School](https://twitter.github.io/scala_school/)
+* [Scala-Exercises.org](https://www.scala-exercises.org/)
 
 ## Setup
 * docker run -it --name scala_dev hseeberger/scala-sbt:8u222_1.3.5_2.13.1 bash
