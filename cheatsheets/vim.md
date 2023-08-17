@@ -7,10 +7,14 @@
 * vim file1 +line_number		open file at specified line number.
 * vim -o file1 file2		vertical window.
 * vim -O file1 file2		horizontal window.
+	* C-w-w			change window.
 * CTRL+w hjkl			switch window.
 
 
 ## Commands
+* :help <command> :q //help
+* :read !ls *pdf //input list of PDF files
+* :color-scheme industry //change color scheme to Industry theme
 * :wq //write-quit
 * :x //idem
 * :q! //discard-quit
