@@ -211,11 +211,42 @@ Iterative and Recursive.
 * most frequent item in array.
 * common elements of two sorted arrays.
 * is_array_rotation_of_another.
-* one-away strings.
+* one-away strings. One Away.
 * rotating 2D array.
 * Fruit into Baskets. (Leetcode 904)
 * Number of Connected Components in an Undirected Graph.
 * Possible Bipartition.
+* Unique characters. (Is string only unique characters? "abc":True. "aabbc":False.)
+* Permutation strings. (Is string permutation of another? "abc", "bca":True.)
+* URLify.
+* String Compressor. ("aabbb" -> "a2b3".)
+* Remove Linked List Duplicates.
+* Sum Two Linked Lists.
+* BST SubTree Checker.
+* Minimum Stack in O(1).
+* Palindrome. ("abba":True. "mom":True. "dad":True.)
+* String Reversal. ("hello" -> "olleh".)
+* Integer Reversal. ("-123" -> "-321".)
+* is_anagram. (Is string anagram of another? "night", "thing":True. "cat", "dog":False.)
+* Iterative Average.
+```python
+def average(nums):
+    result = 0
+    for num in nums:
+        result += num
+    return result / len(nums)
+```
+* Recursive Average.
+```python
+def average(nums):
+    if len(nums) == 1:
+        return nums[0]
+    n = len(nums)
+    return (nums[0] + (n-1) * average(nums[1:])) / n
+#print(average([1,2,3,4,5]))
+```
+* Recursive Approximation of Pi.
+
 
 
 
