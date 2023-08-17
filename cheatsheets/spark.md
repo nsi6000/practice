@@ -67,4 +67,28 @@ cars.take(3).foreach(println)
 * Watermarking
 
 
+## Spark 101
+```scala
+val email = sc.textFile("test.txt")
+sc
+val words = email.flapMap { line => line.split("\\s") }
+words.take(5)
+words.count
+
+val words = "this is a test.".split(" ")
+val wordsRDD = sc.parallelize(words)
+//val wordsRDD = sc.parallelize(List("quick", "brown", "quick", "dog"))
+//wordsRDD.countByValue
+val wordLengths = wordsRDD.map { _.length }
+wordLengths.collect
+
+filteredWords.toDebugString
+
+//Transformations (lazy) vs Actions (non-lazy -> execute)
+
+words.persist // -> MEMORY_ONLY (default)
+
+import org.apache.spark.storage.StorageLevel
+words.persist(StorageLevel.MEMORY_AND_DISK)
+```
 
