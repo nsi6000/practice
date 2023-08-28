@@ -14,6 +14,11 @@
 ## Commands
 * :help <command> :q //help
 * :read !ls *pdf //input list of PDF files
+* :r !ls //short-version of :read
+* :sort //sort the whole file
+* :sort u //sort and remove duplicates for the whole file
+* :sort n //numerci sort
+* :1,5 sort //sort from line 1 to 5
 * :color-scheme industry //change color scheme to Industry theme
 * "*yy //copy to primary
 * "*p //paster from primary
