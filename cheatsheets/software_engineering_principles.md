@@ -43,13 +43,30 @@
 ## Practice
 * Top-Down Design (reqs > docs (HLD+LLD/Design Docs(function type signature)) > comments > function type signatures > tests > code logic.)
 * Coding Pyramid/Pillars (from top to bottom)
+    * Problem specific
+       * Reduce the feature set (of the application)
     * Code Optimization
-        * idiomatic code ("Pythonic code"))
+        * "Premature optimization is the root of all evil" -> it doesnt mean you should not do it.
+        * idiomatic code ("Pythonic code")
+        * refactor into modularity
+        * Automated tests
+        * profiling (gprof, gcov, dtrace, valgrind, perf (linux))
+        * Code review (proof-reading from a peer)
         * programming language specific optimizations
         * fast track/path
         * fail fast and loud
         * defensive programming / guard clauses
         * add error handling
+        * change library (the current one might not be optimized)
+        * change programming language (to a better suited one)
+        * "To go fast, do less." / The "go fast do less" mantra
+           * Do not think in terms of making code run faster but in terms of making the code do less.
+        * technical optimizations / language specific
+           * parallelization
+           * copy-on-write (COW)
+           * caching/memoization
+           * lazy evaluation
+           * inline functions (for small functions, function calls have lots of overhead.)
     * Algorithmic Complexity (DSA) (time and space complexity)
     * Clean Code (data typing (mypy), meaningful comments, improve readability,...) (remove dead code/comments/tests/imports/artifacts.)
     * Pipeline
