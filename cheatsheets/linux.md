@@ -51,6 +51,9 @@
 * sort -o <output-file> <input-file>
 * mkdir foo && cd "$_" //make directory and cd to it.
 * adduser -m myuser && su - myuser //make user and go to it.
+* sleep 60
+* curl <url>
+* echo $?
 ----------
 * curl cht.sh/:intro
 * curl cht.sh/python/append+file
@@ -79,6 +82,42 @@ fi
 ```bash
 ./ipsweep.sh <ip-address> > iplist.txt
 for ip $(cat iplist.txt); do nmap -sS -p 80 -T4 $ip & done
+```
+
+## Proselint in CLI
+```bash
+sudo apt-get install jq
+pip3 install proselint
+proselint --json test.md | jq
+```
+
+## Clangformat in CLI
+```bash
+apt-get install clang-format
+clang-format -i test.java
+```
+
+## Time Java program in CLI
+```bash
+vim test.java
+javac test.java
+time java HelloWorld
+```
+
+## SQLfluff in CLI
+```bash
+pip3 install sqlfluff
+sqlfluff format test.sql --dialect postgres
+sqlfluff fix test.sql --dialect postgres -qf
+```
+
+## extract / compress with gzip and tar
+```bash
+gzip <file.txt> //compress
+gzip -l <file.txt.gz> //show/list
+gzip -d <file.txt.gz>
+tar -czvf <file.tar.gz> <path-to-directory> //compress
+tar -xzvf <file.tar.gz> //uncompress
 ```
 
 
