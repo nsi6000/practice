@@ -97,6 +97,11 @@ Number|   Operator   |Motion
 * u //undo
 * . //repeat last command.
 * CTRL+v, I, <string>, ESC.	//multi-line editing.
+* CTRL+p //in-order auto-complete.
+* CTRL+n //reverse-order auto-complete.
+* :echo $MYVIMRC
+* :echo $HOME
+* :echo $VIM
 
 
 ## Auto-completion
@@ -161,4 +166,7 @@ jobs
 fg %2
 ```
 
+## VIMRC
+* set number
+* syntax on
 
