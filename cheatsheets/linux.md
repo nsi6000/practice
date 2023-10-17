@@ -10,7 +10,7 @@
 
 # Bash commands
 
-* <CTRL>+<L> //clear the screen.
+* CTRL+L //clears the screen.
 * ls -la
 * cd .. ~ - / path
 * pwd
@@ -44,11 +44,42 @@
 * bc
 * !<COMMAND-STRING> //rerun a command.
 * sudo !! //rerun previous command as sudo.
+* service apache2 start //start service.
+* service apache2 stop //stop service.
+* python -m SimpleHTTPServer 80
+* ping google.com -c 10 > ip.txt
+* sort -o <output-file> <input-file>
+* mkdir foo && cd "$_" //make directory and cd to it.
+* adduser -m myuser && su - myuser //make user and go to it.
+----------
+* curl cht.sh/:intro
+* curl cht.sh/python/append+file
+* curl cht.sh/java/Array
 ----------
 * fdisk
 * mount / umount
 * PS1="\W\$"
 * cat /etc/shells
+
+## basic IP sweep script
+```bash
+vim ipsweep.sh
+```
+```bash
+#!/bin/bash
+
+if [ "$1" == "" ] then
+  echo "forgot ip. syntax: ./ipsweep.sh <ip-address>"
+else
+  for ip in `seq 1 254`; do
+    ping -c $1.$ip | grep "64 bytes" |cut -d " " -f 4 | tr -d ":" &
+  done
+fi
+```
+```bash
+./ipsweep.sh <ip-address> > iplist.txt
+for ip $(cat iplist.txt); do nmap -sS -p 80 -T4 $ip & done
+```
 
 
 # Alpine packages
