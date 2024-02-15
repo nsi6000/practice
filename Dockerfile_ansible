@@ -1,0 +1,11 @@
+# Rename file to simply 'Dockerfile'.
+# On Debian, apt-get install podman.
+FROM debian:latest
+
+WORKDIR /home/
+
+COPY ./dev.yml .
+
+RUN apt-get update
+RUN apt-get install -y ansible
+#RUN ansible-playbook dev.yml
