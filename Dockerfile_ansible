@@ -1,5 +1,6 @@
 # Rename file to simply 'Dockerfile'.
 # On Debian, apt-get install podman.
+# podman build -t dev .
 FROM debian:latest
 
 WORKDIR /home/
