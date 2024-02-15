@@ -1,0 +1,53 @@
+- hosts: localhost
+  become: true
+  tasks:
+# vim
+    - name: Install vim
+      apt: name=vim
+    - name: Check vim version
+      shell: vim --version
+# WGet
+    - name: Install WGet
+      apt: name=wget
+    - name: Check WGet version
+      shell: wget --version
+# GCC
+    - name: Install GCC
+      apt: name=gcc
+    - name: Check GCC version
+      shell: gcc --version
+# Java
+    - name: Install Java
+      apt: name=openjdk-17-jdk
+    - name: Check Java version
+      shell: java -version
+# Scala
+    - name: Install Scala
+      apt: name=scala
+    - name: Check Scala version
+      shell: scala -version
+# Scala
+    - name: Install Maven
+      apt: name=maven
+    - name: Check Maven version
+      shell: mvn --version
+# Scala
+    - name: Install Python
+      apt: name=python3
+    - name: Check Python version
+      shell: python3 --version
+# Scala
+    - name: Install Pip
+      apt: name=python3-pip
+    - name: Check pip version
+      shell: pip3 --version
+# Scala
+    - name: Install Redis
+      apt: name=redis-server
+    - name: Check Redis version
+      shell: redis-server --version
+# Podman
+    - name: Install Podman
+      apt: name=podman
+    - name: Check Podman version
+      shell: podman --version
