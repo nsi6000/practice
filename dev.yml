@@ -5,49 +5,49 @@
     - name: Install vim
       apt: name=vim
     - name: Check vim version
-      shell: vim --version
+      shell: vim --version | head -n 1 >> ansible_installed.txt
 # WGet
     - name: Install WGet
       apt: name=wget
     - name: Check WGet version
-      shell: wget --version
+      shell: wget --version | head -n 1 >> ansible_installed.txt
 # GCC
     - name: Install GCC
       apt: name=gcc
     - name: Check GCC version
-      shell: gcc --version
+      shell: gcc --version | head -n 1 >> ansible_installed.txt
 # Java
     - name: Install Java
       apt: name=openjdk-17-jdk
     - name: Check Java version
-      shell: java -version
+      shell: java -version | head -n 1 >> ansible_installed.txt
 # Scala
     - name: Install Scala
       apt: name=scala
     - name: Check Scala version
-      shell: scala -version
+      shell: scala -version | head -n 1 >> ansible_installed.txt
 # Scala
     - name: Install Maven
       apt: name=maven
     - name: Check Maven version
-      shell: mvn --version
+      shell: mvn --version | head -n 1 >> ansible_installed.txt
 # Scala
     - name: Install Python
       apt: name=python3
     - name: Check Python version
-      shell: python3 --version
+      shell: python3 --version | head -n 1 >> ansible_installed.txt
 # Scala
     - name: Install Pip
       apt: name=python3-pip
     - name: Check pip version
-      shell: pip3 --version
+      shell: pip3 --version | head -n 1 >> ansible_installed.txt
 # Scala
     - name: Install Redis
       apt: name=redis-server
     - name: Check Redis version
-      shell: redis-server --version
+      shell: redis-server --version | head -n 1 >> ansible_installed.txt
 # Podman
     - name: Install Podman
       apt: name=podman
     - name: Check Podman version
-      shell: podman --version
+      shell: podman --version | head -n 1 >> ansible_installed.txt
