@@ -13,3 +13,4 @@ RUN apt-get install -y openjdk-17-jdk
 RUN apt-get install -y clang-format
 
 COPY ./.vimrc .
+COPY ./template ./template
