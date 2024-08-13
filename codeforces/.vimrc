@@ -7,6 +7,7 @@ if has('syntax')
 endif
 
 set number
+set shell=/bin/bash
 
 abbr psvm public static void main(String[] args){<CR>}<esc>0
 abbr sop System.out.println("");<esc>2hi
